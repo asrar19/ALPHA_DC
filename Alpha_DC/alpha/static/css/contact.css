@@ -1,0 +1,70 @@
+.u-section-1 {
+    background-image: url("images/localvsdatacenter-scaled.webp");
+    background-position: 50% 50%;
+  }
+  
+  .u-section-1 .u-sheet-1 {
+    min-height: 827px;
+  }
+  
+  .u-section-1 .u-form-1 {
+    background-image: none;
+    height: 471px;
+    box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.4);
+    margin: 167px 131px 60px 91px;
+  }
+  
+  .u-section-1 .u-text-1 {
+    margin-left: 0;
+  }
+  
+  .u-section-1 .u-btn-1 {
+    background-image: none;
+    padding: 10px 107px 10px 105px;
+  }
+  
+  @media (max-width: 1199px) {
+    .u-section-1 .u-sheet-1 {
+      min-height: 682px;
+    }
+  
+    .u-section-1 .u-form-1 {
+      width: 679px;
+      margin-left: 0;
+      margin-right: 21px;
+    }
+  
+    .u-section-1 .u-text-1 {
+      font-weight: normal;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    .u-section-1 .u-sheet-1 {
+      min-height: 522px;
+    }
+  
+    .u-section-1 .u-form-1 {
+      margin-right: 0;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .u-section-1 .u-sheet-1 {
+      min-height: 392px;
+    }
+  
+    .u-section-1 .u-form-1 {
+      width: 540px;
+    }
+  }
+  
+  @media (max-width: 575px) {
+    .u-section-1 .u-sheet-1 {
+      min-height: 247px;
+    }
+  
+    .u-section-1 .u-form-1 {
+      width: 340px;
+    }
+  }

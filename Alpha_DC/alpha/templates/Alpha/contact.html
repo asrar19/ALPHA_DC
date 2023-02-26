@@ -1,0 +1,43 @@
+{% extends 'alpha/index.html' %}
+{% load static%}
+
+
+{% block title %} Contact {% endblock %}
+
+{% block content %}
+
+
+    <section class="u-clearfix u-image u-section-1" id="carousel_a4ed" data-image-width="2560" data-image-height="1440">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-align-center u-custom-color-2 u-form u-radius-50 u-form-1">
+          <form action="https://forms.nicepagesrv.com/v2/form/process" class="u-clearfix u-form-spacing-25 u-form-vertical u-inner-form" source="email" name="form" style="padding: 30px;">
+            <h3 class="u-align-center u-custom-font u-font-georgia u-form-group u-form-text u-label-top u-text u-text-1">We Would be honored to have your feedback</h3>
+            <div class="u-form-group u-form-name u-form-partition-factor-2 u-label-top">
+              <label for="name-66b3" class="u-label">Name</label>
+              <input type="text" placeholder="Enter your Name" id="name-66b3" name="name" class="u-grey-5 u-input u-input-rectangle u-radius-10" required="">
+            </div>
+            <div class="u-form-email u-form-group u-form-partition-factor-2 u-label-top">
+              <label for="email-66b3" class="u-label">Email</label>
+              <input type="email" placeholder="Enter a valid email address" id="email-66b3" name="email" class="u-grey-5 u-input u-input-rectangle u-radius-10" required="">
+            </div>
+            <div class="u-form-group u-form-message u-label-top">
+              <label for="message-66b3" class="u-label">Message</label>
+              <textarea placeholder="Enter your message" rows="4" cols="50" id="message-66b3" name="message" class="u-grey-5 u-input u-input-rectangle u-radius-10" required=""></textarea>
+            </div>
+            <div class="u-align-center u-form-group u-form-submit u-label-top">
+              <a href="#" class="u-border-none u-btn u-btn-round u-btn-submit u-button-style u-custom-color-4 u-radius-10 u-btn-1">Submit</a>
+              <input type="submit" value="submit" class="u-form-control-hidden">
+            </div>
+            <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
+            <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
+            <input type="hidden" value="" name="recaptchaResponse">
+          </form>
+        </div>
+      </div>
+    </section>
+    
+    
+
+
+
+{% endblock  %}

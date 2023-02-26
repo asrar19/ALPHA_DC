@@ -1,0 +1,54 @@
+{% extends 'alpha/index.html' %}
+{% load static%}
+
+
+{% block title %} Services {% endblock %}
+
+{% block content %}
+<linl rel="stylesheet" type="text/css" href="{% static 'css/services.css'%}""></linl>
+<script type="text/javascript" src="{% static 'js/services.js'%}"></script>
+
+
+<h1>Welcome to our services</h1>
+<h3>here you can learn how to build your data center </h3>
+<hr>
+
+<div>
+<form name="building_dc" id="building_dc" action="" method="POST">
+   {% csrf_token %}
+   <div>
+      <p>Plaease answer the below question to have the data center result </p>
+      <p>How many nodes do you have?</p>
+      <p><input type="radio" name="question1" value="0-30">0-30</p>
+      <p><input type="radio" name="question1" value="30-60">30-60</p>
+      <p><input type="radio" name="question1" value="60-90">60-90</p>
+      <p><input type="radio" name="question1" value="90-120">90-120</p>
+   </div>
+
+   <div>
+      <p>Which level of Data Center tier do you prefer ?</p>
+      <p><input type="radio" name="question2" value="1">tier 1</p>
+      <p><input type="radio" name="question2" value="2">tier 2</p>
+      <p><input type="radio" name="question2" value="3">tier 3</p>
+      <p><input type="radio" name="question2" value="3">tier 4</p>
+   </div>
+
+   <div>
+      <p>what is the size of your facility ?</p>
+      <p><input type="radio" name="question3" value="small">small</p>
+      <p><input type="radio" name="question3" value="medium">medium</p>
+      <p><input type="radio" name="question3" value="big">big</p>
+   </div>
+
+   <input type="submit" name="" value="submit">
+
+
+
+
+
+</form>
+
+</div>
+
+
+{% endblock  %}
