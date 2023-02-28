@@ -36,9 +36,20 @@ def services(request : HttpRequest):
             electricalSystemltotalLow = sqft * 280
             electricalSystemtotalHigh = sqft * 460
 
+            HVACtotalLow = sqft * 125 
+            HVACtotalHigh = sqft * 215
+
+            FiretotalLow = sqft * 15
+            FiretotalHigh = sqft * 15
+
+            FitOuttotalLow = sqft * 100
+            FitOuttotalHigh = sqft * 200
+
+
             context = {
-                "totalLow" : buildingShelltotalLow + electricalSystemltotalLow,
-                "totalMax" : buildingShelltotalHigh + electricalSystemtotalHigh
+                "totalLow" : buildingShelltotalLow + electricalSystemltotalLow + HVACtotalLow + FiretotalLow +FitOuttotalLow ,
+                "totalMax" : buildingShelltotalHigh + electricalSystemtotalHigh + HVACtotalHigh + FiretotalHigh + FitOuttotalHigh
+
                 }
             return render(request, "alpha/services/service_1.html", context)
 

@@ -1,3 +1,4 @@
+
 {% extends 'alpha/index.html' %}
 {% load static%}
 {% load mul %}
@@ -5,116 +6,151 @@
 
 {% block title %} Services {% endblock %}
 
-{% block content %}
+
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
-<title>Bootstrap Example</title>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-</head>
-<body class="p-3 m-0 border-0 bd-example bd-example-cssgrid">
-<linl rel="stylesheet" type="text/css" href="{% static 'css/services.css'%}"></linl>
-<script type="text/javascript" src="{% static 'js/services.js'%}"></script>
+<link rel="stylesheet"  href="{% static 'css/sub_services.css'%}">
 
 
-<h1>Welcome to our services</h1>
-<h3>here you can learn how to build your data center </h3>
-<hr>
-<h2> This is sevrice 2 </h2>
-<h4>your choices are :</h4>
+{% block content %}
 
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">nodes</th>
-      <th scope="col">tier level</th>
-      <th scope="col">facility size</th>
-      <th scope="col">room area (SQFT)</th>
-
-    </tr>
-  </thead>
-  <tbody>
-  
-    <tr>
-      <th scope="row">1</th>
-      <td>30-60</td>
-      <td>II</td>
-      <td>Medium</td>
-      <td>{{request.POST.sqft}}</td>
-
-  </tbody>
-</table>
+ 
+<section class="u-clearfix u-grey-10 u-section-1" id="carousel_e67a">
+  <div class="u-clearfix u-sheet u-sheet-1">
+    <div class="u-align-center u-container-style u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-group u-shape-rectangle u-group-1">
+      <div class="u-container-layout">
+        <h6 class="u-align-left u-custom-font u-font-montserrat u-text u-text-default u-text-1">This is service 2 .&nbsp;</h6>
+        <h5 class="u-align-left u-custom-font u-font-montserrat u-text u-text-custom-color-1 u-text-2"> Here you can find everything you will need in this service , depending on your answers for the pervious questions .&nbsp;</h5>
+      </div>
+    </div>
+    <img class="u-image u-image-contain u-image-default u-image-1" src="{% static 'images/33809698_81137890471.png'%}" alt="" data-image-width="608" data-image-height="820">
+  </div>
+</section>
 
 
-<h4>Tier II Features </h4>
-<!--   Tier level     -->
+<!-- Choices  ------------------------------------------------------------------------------>
 
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">Feature</th>
-      <th scope="col">Tier II</th>
-
-
-    </tr>
-  </thead>
-  <tbody>
-  
-    <tr>
-      <th scope="row">1</th>
-      <td>Uptime guarantee</td>
-      <td>99.741%		</td>
-    </tr>
-
-    <tr>
-      <th scope="row">2</th>
-      <td>Downtime per year	</td>
-      <td> more than 22 hours	</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Component redundancy	</td>
-      <td>Partial power and cooling redundancy (partial N+1)</td>
-    </tr>
-    <tr>
-      <th scope="row">4</th>
-      <td>Concurrently maintainable	</td>
-      <td>no</td>
-    </tr>
-    <tr>
-      <th scope="row">5</th>
-      <td>Price</td>
-      <td>$$</td>
-    </tr>
-    <tr>
-      <th scope="row">6</th>
-      <td>Compartmentalization</td>
-      <td>no</td>
-    </tr>
-    <tr>
-      <th scope="row">7</th>
-      <td>Staffing</td>
-      <td>1 shift</td>
-    </tr>
-
-    <tr>
-      <th scope="row">8</th>
-      <td>Typical customer</td>
-      <td>SMBs</td>
-    </tr>
-
-    <tr>
-      <th scope="row">9</th>
-      <td>The main reason why companies select this tier</td>
-      <td>A good cost-to-performance ratio	</td>
-    </tr>
-
-  </tbody>
-</table>
+<section class="u-clearfix u-custom-color-2 u-section-2" id="sec-af16">
+  <div class="u-clearfix u-sheet u-sheet-1"><span class="u-file-icon u-icon u-text-grey-5 u-icon-1"></span>
+    <h3 class="u-align-center u-custom-font u-font-raleway u-text u-text-1">Your Choices are :</h3>
+    <div class="u-border-3 u-border-custom-color-5 u-line u-line-horizontal u-line-1"></div>
+    <ul class="u-custom-font u-font-courier-new u-text u-text-2">
+      <li>nodes : 30-60</li>
+      <li>tier level: Tier II</li>
+      <li>facility size: Medium</li>
+      <li>room area (SQFT):{{request.POST.sqft}} </li>
+    </ul>
+  </div>
+</section>
 
 
-<!--   Tier level     -->
+<!-- BRIEF  ------------------------------------------------------------------------------>
+
+
+<section>
+  <div>
+    <h3>Tier II</h3>
+    <p>
+      Tier II facilities cover redundant capacity components for power and cooling that provide better 
+      maintenance opportunities and safety against disruptions. These components include:
+       <ul>
+        <li>Engine generators.</li>
+        <li> Energy storage.</li>
+        <li>Chillers</li>
+        <li> Cooling units.</li>
+        <li>UPS modules.</li>
+        <li>Pumps</li>
+        <li>Heat rejection equipment.</li>
+        <li>Fuel tanks.</li>
+        <li>Fuel cells.</li>
+
+
+
+       </ul>
+       The distribution path of Tier II serves a critical environment, and the components can be removed without shutting it down. Like a Tier I facility, unexpected shutdown of a 
+       Tier II data center will affect the system.
+    </p>
+
+
+
+  </div>
+</section>
+
+
+<!-- Features Table ------------------------------------------------------------------------------>
+<section class="u-align-center u-clearfix u-custom-color-1 u-section-3" id="sec-1750">
+  <div class="u-clearfix u-sheet u-sheet-1">
+    <h2 class="u-text u-text-default u-text-1"> Tier II Features</h2>
+    <div class="u-table u-table-responsive u-table-1">
+      <table class="u-table-entity u-table-entity-1">
+        <colgroup>
+          <col width="33.3%">
+          <col width="35.4%">
+          <col width="31.3%">
+        </colgroup>
+        <thead class="u-align-center u-custom-color-2 u-table-header u-table-header-1">
+          <tr style="height: 46px;">
+            <th class="u-border-2 u-border-black u-table-cell">#</th>
+            <th class="u-border-2 u-border-black u-table-cell">Features </th>
+            <th class="u-border-2 u-border-black u-table-cell"> Tier I</th>
+          </tr>
+        </thead>
+        <tbody class="u-align-center u-palette-5-light-2 u-table-body u-table-body-1">
+          <tr style="height: 62px;">
+            <td class="u-border-1 u-border-black u-table-cell u-table-cell-4">1</td>
+            <td class="u-border-1 u-border-black u-table-cell u-table-cell-5">Uptime guarantee</td>
+            <td class="u-border-1 u-border-black u-table-cell u-table-cell-6">99.741%			</td>
+          </tr>
+          <tr style="height: 68px;">
+            <td class="u-border-1 u-border-black u-table-cell u-table-cell-7">2</td>
+            <td class="u-border-1 u-border-black u-table-cell u-table-cell-8">Downtime per year	</td>
+            <td class="u-border-1 u-border-black u-table-cell u-table-cell-9">more than 22 hours</td>
+          </tr>
+          <tr style="height: 68px;">
+            <td class="u-border-1 u-border-black u-table-cell u-table-cell-10">3</td>
+            <td class="u-border-1 u-border-black u-table-cell u-table-cell-11">Component redundancy	</td>
+            <td class="u-border-1 u-border-black u-table-cell u-table-cell-12"> Partial power and cooling redundancy (partial N+1) </td>
+          </tr>
+          <tr style="height: 68px;">
+            <td class="u-border-1 u-border-black u-table-cell u-table-cell-13">4</td>
+            <td class="u-border-1 u-border-black u-table-cell u-table-cell-14">Concurrently maintainable</td>
+            <td class="u-border-1 u-border-black u-table-cell u-table-cell-15">no</td>
+          </tr>
+          <tr style="height: 68px;">
+            <td class="u-border-1 u-border-black u-table-cell u-table-cell-16">5</td>
+            <td class="u-border-1 u-border-black u-table-cell u-table-cell-17">Price</td>
+            <td class="u-border-1 u-border-black u-table-cell u-table-cell-18">$$</td>
+          </tr>
+          <tr style="height: 68px;">
+            <td class="u-border-1 u-border-black u-table-cell u-table-cell-19">6</td>
+            <td class="u-border-1 u-border-black u-table-cell u-table-cell-20">Compartmentalization</td>
+            <td class="u-border-1 u-border-black u-table-cell u-table-cell-21">no</td>
+          </tr>
+          <tr style="height: 68px;">
+            <td class="u-border-1 u-border-black u-table-cell u-table-cell-22">7</td>
+            <td class="u-border-1 u-border-black u-table-cell u-table-cell-23">Staffing</td>
+            <td class="u-border-1 u-border-black u-table-cell u-table-cell-24">1 shift</td>
+          </tr>
+          <tr style="height: 68px;">
+            <td class="u-border-1 u-border-black u-table-cell u-table-cell-25">8</td>
+            <td class="u-border-1 u-border-black u-table-cell u-table-cell-26">Typical customer</td>
+            <td class="u-border-1 u-border-black u-table-cell u-table-cell-27">SMBs</td>
+          </tr>
+          <tr style="height: 68px;">
+            <td class="u-border-1 u-border-black u-table-cell u-table-cell-28">9</td>
+            <td class="u-border-1 u-border-black u-table-cell u-table-cell-29">The main reason why companies select this tier</td>
+            <td class="u-border-1 u-border-black u-table-cell u-table-cell-30">A good cost-to-performance ratio</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+
+<!-----------------COSTING-------------------------------------------------------------------------->
+
 
 
 
@@ -188,16 +224,222 @@
 </tr>
 <tr>
 <th scope="row">6</th>
-<td>Total Development Costs	</td>
+<td style="color: white; font-style: oblique;">Total Development Costs	</td>
 <td>{{request.POST.sqft}}</td>
 <td>$600</td>
 <td>$1,060</td>
-<td>${{request.POST.sqft|addition:80}}</td>
-<td>${{request.POST.sqft|addition:900}}</td>
+<td>${{totalLow}}</td>
+<td>${{totalMax}}</td>
 
 </tr>
 
     </tbody>
   </table>
+
+
+
+  
+<style>
+
+  h1{
+    font-family: "Times New Roman", Times, serif;
+  }
+  
+  /* Container holding the image and the text */
+  .container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Bottom left text */
+  .bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+  }
+  
+  /* Top left text */
+  .top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+  }
+  
+  /* Top right text */
+  .top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+  }
+  
+  /* Bottom right text */
+  .bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+  }
+  
+  /* Centered text */
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  
+  
+  table, th, td {
+    border: 1px solid;
+    text-align: center;
+    width:auto;
+    background-color: #34345a;
+    color: #e9d8eb;
+  
+  
+  }
+  
+  th{ 
+    color: #ffffff;
+  
+  }
+  
+  h4{
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+    color: #34345a;
+  }
+  
+  </style>
+  
+
+
+
+
+
+
+
+<style> .u-cookies-consent {
+background-image: none;
+}
+
+.u-cookies-consent .u-sheet-1 {
+min-height: 212px;
+}
+
+.u-cookies-consent .u-layout-wrap-1 {
+margin-top: 30px;
+margin-bottom: 30px;
+}
+
+.u-cookies-consent .u-layout-cell-1 {
+min-height: 152px;
+}
+
+.u-cookies-consent .u-container-layout-1 {
+padding: 30px 60px;
+}
+
+.u-cookies-consent .u-text-1 {
+margin-top: 0;
+margin-right: 20px;
+margin-bottom: 0;
+}
+
+.u-cookies-consent .u-text-2 {
+margin: 8px 20px 0 0;
+}
+
+.u-cookies-consent .u-layout-cell-2 {
+min-height: 152px;
+}
+
+.u-cookies-consent .u-container-layout-2 {
+padding: 30px;
+}
+
+.u-cookies-consent .u-btn-1 {
+margin: 0 auto 0 0;
+}
+
+@media (max-width: 1199px) {
+.u-cookies-consent .u-sheet-1 {
+min-height: 131px;
+}
+
+.u-cookies-consent .u-layout-cell-1 {
+min-height: 125px;
+}
+
+.u-cookies-consent .u-text-1 {
+margin-right: 0;
+}
+
+.u-cookies-consent .u-text-2 {
+margin-right: 0;
+}
+
+.u-cookies-consent .u-layout-cell-2 {
+min-height: 125px;
+}
+}
+
+@media (max-width: 991px) {
+.u-cookies-consent .u-sheet-1 {
+min-height: 106px;
+}
+
+.u-cookies-consent .u-layout-cell-1 {
+min-height: 100px;
+}
+
+.u-cookies-consent .u-container-layout-1 {
+padding-left: 30px;
+padding-right: 30px;
+}
+
+.u-cookies-consent .u-layout-cell-2 {
+min-height: 100px;
+}
+}
+
+@media (max-width: 767px) {
+.u-cookies-consent .u-sheet-1 {
+min-height: 225px;
+}
+
+.u-cookies-consent .u-layout-cell-1 {
+min-height: 154px;
+}
+
+.u-cookies-consent .u-container-layout-1 {
+padding-left: 10px;
+padding-right: 10px;
+padding-bottom: 20px;
+}
+
+.u-cookies-consent .u-layout-cell-2 {
+min-height: 65px;
+}
+
+.u-cookies-consent .u-container-layout-2 {
+padding: 10px;
+}
+}
+
+@media (max-width: 575px) {
+.u-cookies-consent .u-sheet-1 {
+min-height: 121px;
+}
+
+.u-cookies-consent .u-layout-cell-1 {
+min-height: 100px;
+}
+
+.u-cookies-consent .u-layout-cell-2 {
+min-height: 15px;
+}
+}</style></section>
 
 {% endblock  %}

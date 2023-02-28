@@ -1,11 +1,9 @@
-
-
-
 from django.shortcuts import render, redirect
 from django.http import HttpRequest, HttpResponse
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login, logout
 from .models import Profile
+from datetime import date
 from django.db import IntegrityError
 
 
@@ -75,11 +73,5 @@ def profile_user(request : HttpRequest):
         return render(request,"users:profile" , {"msg": update_msg})
     context = {"user":user , "msg":update_msg}
     return render(request, "users/register.html")
-
-
-
-
-
-
 
 

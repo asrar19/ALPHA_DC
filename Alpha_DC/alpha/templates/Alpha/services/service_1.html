@@ -15,184 +15,138 @@
 {% block content %}
 
  
+<section class="u-clearfix u-grey-10 u-section-1" id="carousel_e67a">
+  <div class="u-clearfix u-sheet u-sheet-1">
+    <div class="u-align-center u-container-style u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-group u-shape-rectangle u-group-1">
+      <div class="u-container-layout">
+        <h6 class="u-align-left u-custom-font u-font-montserrat u-text u-text-default u-text-1">This is service 1 .&nbsp;</h6>
+        <h5 class="u-align-left u-custom-font u-font-montserrat u-text u-text-custom-color-1 u-text-2"> Here you can find everything you will need in this service , depending on your answers for the pervious questions .&nbsp;</h5>
+      </div>
+    </div>
+    <img class="u-image u-image-contain u-image-default u-image-1" src="{% static 'images/33809698_81137890471.png'%}" alt="" data-image-width="608" data-image-height="820">
+  </div>
+</section>
 
-<div class="container">
-  <img src="{% static 'images/5.jpg'%}" alt="" style="width:100%;">
-  <div class="centered"><h1>Welcome to Service 1 </h1></div>
-</div>
+
+<!-- Choices  ------------------------------------------------------------------------------>
+
+<section class="u-clearfix u-custom-color-2 u-section-2" id="sec-af16">
+  <div class="u-clearfix u-sheet u-sheet-1"><span class="u-file-icon u-icon u-text-grey-5 u-icon-1"></span>
+    <h3 class="u-align-center u-custom-font u-font-raleway u-text u-text-1">Your Choices are :</h3>
+    <div class="u-border-3 u-border-custom-color-5 u-line u-line-horizontal u-line-1"></div>
+    <ul class="u-custom-font u-font-courier-new u-text u-text-2">
+      <li>nodes : 0-30</li>
+      <li>tier level: Tier I</li>
+      <li>facility size: Small</li>
+      <li>room area (SQFT):{{request.POST.sqft}} </li>
+    </ul>
+  </div>
+</section>
 
 
-<style>
+<!-- BRIEF  ------------------------------------------------------------------------------>
 
-h1{
-  font-family: "Times New Roman", Times, serif;
-}
 
-/* Container holding the image and the text */
-.container {
-  position: relative;
-  text-align: center;
-  color: white;
-}
+<section>
+  <div>
+    <h3>Tier I</h3>
+    <p>
+      A Tier I data center is the basic capacity level with infrastructure to support information technology for
+       an office setting and beyond. The requirements for a Tier I facility include:
+       <ul>
+        <li>An uninterruptible power supply (UPS) for power sags, outages, and spikes.</li>
+        <li> An area for IT systems.</li>
+        <li>Dedicated cooling equipment that runs outside office hours.</li>
 
-/* Bottom left text */
-.bottom-left {
-  position: absolute;
-  bottom: 8px;
-  left: 16px;
-}
-
-/* Top left text */
-.top-left {
-  position: absolute;
-  top: 8px;
-  left: 16px;
-}
-
-/* Top right text */
-.top-right {
-  position: absolute;
-  top: 8px;
-  right: 16px;
-}
-
-/* Bottom right text */
-.bottom-right {
-  position: absolute;
-  bottom: 8px;
-  right: 16px;
-}
-
-/* Centered text */
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+       </ul>
+      An engine generator for power outages.
+      Tier I protects against disruptions from human error, but not unexpected failure or outage. 
+      Redundant equipment includes chillers, pumps, UPS modules, and engine generators. 
+      The facility will have to shut down completely for preventive maintenance and repairs, 
+      and failure to do so increases the risk of unplanned disruptions and severe consequences from system failure.
+    </p>
 
 
 
-table, th, td {
-  border: 1px solid;
-  text-align: center;
-  width:auto;
-  background-color: #34345a;
-  color: #e9d8eb;
+  </div>
+</section>
 
 
-}
+<!-- Features Table ------------------------------------------------------------------------------>
+<section class="u-align-center u-clearfix u-custom-color-1 u-section-3" id="sec-1750">
+  <div class="u-clearfix u-sheet u-sheet-1">
+    <h2 class="u-text u-text-default u-text-1"> Tier I Features</h2>
+    <div class="u-table u-table-responsive u-table-1">
+      <table class="u-table-entity u-table-entity-1">
+        <colgroup>
+          <col width="33.3%">
+          <col width="35.4%">
+          <col width="31.3%">
+        </colgroup>
+        <thead class="u-align-center u-custom-color-2 u-table-header u-table-header-1">
+          <tr style="height: 46px;">
+            <th class="u-border-2 u-border-black u-table-cell">#</th>
+            <th class="u-border-2 u-border-black u-table-cell">Features </th>
+            <th class="u-border-2 u-border-black u-table-cell"> Tier I</th>
+          </tr>
+        </thead>
+        <tbody class="u-align-center u-palette-5-light-2 u-table-body u-table-body-1">
+          <tr style="height: 62px;">
+            <td class="u-border-1 u-border-black u-table-cell u-table-cell-4">1</td>
+            <td class="u-border-1 u-border-black u-table-cell u-table-cell-5">Uptime guarantee</td>
+            <td class="u-border-1 u-border-black u-table-cell u-table-cell-6">99.671%	</td>
+          </tr>
+          <tr style="height: 68px;">
+            <td class="u-border-1 u-border-black u-table-cell u-table-cell-7">2</td>
+            <td class="u-border-1 u-border-black u-table-cell u-table-cell-8">Downtime per year	</td>
+            <td class="u-border-1 u-border-black u-table-cell u-table-cell-9">more than 28.8 hours</td>
+          </tr>
+          <tr style="height: 68px;">
+            <td class="u-border-1 u-border-black u-table-cell u-table-cell-10">3</td>
+            <td class="u-border-1 u-border-black u-table-cell u-table-cell-11">Component redundancy	</td>
+            <td class="u-border-1 u-border-black u-table-cell u-table-cell-12"> none </td>
+          </tr>
+          <tr style="height: 68px;">
+            <td class="u-border-1 u-border-black u-table-cell u-table-cell-13">4</td>
+            <td class="u-border-1 u-border-black u-table-cell u-table-cell-14">Concurrently maintainable</td>
+            <td class="u-border-1 u-border-black u-table-cell u-table-cell-15">no</td>
+          </tr>
+          <tr style="height: 68px;">
+            <td class="u-border-1 u-border-black u-table-cell u-table-cell-16">5</td>
+            <td class="u-border-1 u-border-black u-table-cell u-table-cell-17">Price</td>
+            <td class="u-border-1 u-border-black u-table-cell u-table-cell-18">$</td>
+          </tr>
+          <tr style="height: 68px;">
+            <td class="u-border-1 u-border-black u-table-cell u-table-cell-19">6</td>
+            <td class="u-border-1 u-border-black u-table-cell u-table-cell-20">Compartmentalization</td>
+            <td class="u-border-1 u-border-black u-table-cell u-table-cell-21">no</td>
+          </tr>
+          <tr style="height: 68px;">
+            <td class="u-border-1 u-border-black u-table-cell u-table-cell-22">7</td>
+            <td class="u-border-1 u-border-black u-table-cell u-table-cell-23">Staffing</td>
+            <td class="u-border-1 u-border-black u-table-cell u-table-cell-24">none</td>
+          </tr>
+          <tr style="height: 68px;">
+            <td class="u-border-1 u-border-black u-table-cell u-table-cell-25">8</td>
+            <td class="u-border-1 u-border-black u-table-cell u-table-cell-26">Typical customer</td>
+            <td class="u-border-1 u-border-black u-table-cell u-table-cell-27">Small companies and start-ups with simple requirements</td>
+          </tr>
+          <tr style="height: 68px;">
+            <td class="u-border-1 u-border-black u-table-cell u-table-cell-28">9</td>
+            <td class="u-border-1 u-border-black u-table-cell u-table-cell-29">The main reason why companies select this tier</td>
+            <td class="u-border-1 u-border-black u-table-cell u-table-cell-30">The most affordable data center tier</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
 
-th{ 
-  color: #ffffff;
 
-}
-
-h4{
-  font-family: "Times New Roman", Times, serif;
-  text-align: center;
-  color: #34345a;
-}
-
-</style>
+<!-----------------COSTING-------------------------------------------------------------------------->
 
 
-<hr>
-<h4>your choices are :</h4>
 
-<table class="table" >
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">nodes</th>
-      <th scope="col">tier level</th>
-      <th scope="col">facility size</th>
-      <th scope="col">room area (SQFT)</th>
-
-    </tr>
-  </thead>
-  <tbody>
-  
-    <tr>
-      <th scope="row">1</th>
-      <td>0-30</td>
-      <td>I</td>
-      <td>Small</td>
-      <td>{{request.POST.sqft}}</td>
-
-  </tbody>
-</table>
-
-<hr>
-</br>
-
-<h4>Tier I Features </h4>
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">Feature</th>
-      <th scope="col">Tier I</th>
-
-
-    </tr>
-  </thead>
-  <tbody>
-  
-    <tr>
-      <th scope="row">1</th>
-      <td>Uptime guarantee</td>
-      <td>99.671%	</td>
-    </tr>
-
-    <tr>
-      <th scope="row">2</th>
-      <td>Downtime per year	</td>
-      <td> more than 28.8 hours	</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Component redundancy	</td>
-      <td>none</td>
-    </tr>
-    <tr>
-      <th scope="row">4</th>
-      <td>Concurrently maintainable	</td>
-      <td>no</td>
-    </tr>
-    <tr>
-      <th scope="row">5</th>
-      <td>Price</td>
-      <td>$</td>
-    </tr>
-    <tr>
-      <th scope="row">6</th>
-      <td>Compartmentalization</td>
-      <td>no</td>
-    </tr>
-    <tr>
-      <th scope="row">7</th>
-      <td>Staffing</td>
-      <td>none</td>
-    </tr>
-
-    <tr>
-      <th scope="row">8</th>
-      <td>Typical customer</td>
-      <td>	Small companies and start-ups with simple requirements</td>
-    </tr>
-
-    <tr>
-      <th scope="row">9</th>
-      <td>The main reason why companies select this tier</td>
-      <td>The most affordable data center tier	</td>
-    </tr>
-
-  </tbody>
-</table>
-
-<hr>
-</br>
 
 
 
@@ -275,5 +229,211 @@ h4{
 
     </tbody>
   </table>
+
+
+
+  
+<style>
+
+  h1{
+    font-family: "Times New Roman", Times, serif;
+  }
+  
+  /* Container holding the image and the text */
+  .container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Bottom left text */
+  .bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+  }
+  
+  /* Top left text */
+  .top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+  }
+  
+  /* Top right text */
+  .top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+  }
+  
+  /* Bottom right text */
+  .bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+  }
+  
+  /* Centered text */
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  
+  
+  table, th, td {
+    border: 1px solid;
+    text-align: center;
+    width:auto;
+    background-color: #34345a;
+    color: #e9d8eb;
+  
+  
+  }
+  
+  th{ 
+    color: #ffffff;
+  
+  }
+  
+  h4{
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+    color: #34345a;
+  }
+  
+  </style>
+  
+
+
+
+
+
+
+
+<style> .u-cookies-consent {
+background-image: none;
+}
+
+.u-cookies-consent .u-sheet-1 {
+min-height: 212px;
+}
+
+.u-cookies-consent .u-layout-wrap-1 {
+margin-top: 30px;
+margin-bottom: 30px;
+}
+
+.u-cookies-consent .u-layout-cell-1 {
+min-height: 152px;
+}
+
+.u-cookies-consent .u-container-layout-1 {
+padding: 30px 60px;
+}
+
+.u-cookies-consent .u-text-1 {
+margin-top: 0;
+margin-right: 20px;
+margin-bottom: 0;
+}
+
+.u-cookies-consent .u-text-2 {
+margin: 8px 20px 0 0;
+}
+
+.u-cookies-consent .u-layout-cell-2 {
+min-height: 152px;
+}
+
+.u-cookies-consent .u-container-layout-2 {
+padding: 30px;
+}
+
+.u-cookies-consent .u-btn-1 {
+margin: 0 auto 0 0;
+}
+
+@media (max-width: 1199px) {
+.u-cookies-consent .u-sheet-1 {
+min-height: 131px;
+}
+
+.u-cookies-consent .u-layout-cell-1 {
+min-height: 125px;
+}
+
+.u-cookies-consent .u-text-1 {
+margin-right: 0;
+}
+
+.u-cookies-consent .u-text-2 {
+margin-right: 0;
+}
+
+.u-cookies-consent .u-layout-cell-2 {
+min-height: 125px;
+}
+}
+
+@media (max-width: 991px) {
+.u-cookies-consent .u-sheet-1 {
+min-height: 106px;
+}
+
+.u-cookies-consent .u-layout-cell-1 {
+min-height: 100px;
+}
+
+.u-cookies-consent .u-container-layout-1 {
+padding-left: 30px;
+padding-right: 30px;
+}
+
+.u-cookies-consent .u-layout-cell-2 {
+min-height: 100px;
+}
+}
+
+@media (max-width: 767px) {
+.u-cookies-consent .u-sheet-1 {
+min-height: 225px;
+}
+
+.u-cookies-consent .u-layout-cell-1 {
+min-height: 154px;
+}
+
+.u-cookies-consent .u-container-layout-1 {
+padding-left: 10px;
+padding-right: 10px;
+padding-bottom: 20px;
+}
+
+.u-cookies-consent .u-layout-cell-2 {
+min-height: 65px;
+}
+
+.u-cookies-consent .u-container-layout-2 {
+padding: 10px;
+}
+}
+
+@media (max-width: 575px) {
+.u-cookies-consent .u-sheet-1 {
+min-height: 121px;
+}
+
+.u-cookies-consent .u-layout-cell-1 {
+min-height: 100px;
+}
+
+.u-cookies-consent .u-layout-cell-2 {
+min-height: 15px;
+}
+}</style></section>
 
 {% endblock  %}
