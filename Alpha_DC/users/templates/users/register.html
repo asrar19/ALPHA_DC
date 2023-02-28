@@ -4,8 +4,6 @@
 
 
 {% block content %}
-
-
 <section class="vh-50 bg-image"
   style="background-image: url('https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.webp');">
   <div class="mask d-flex align-items-center h-100 gradient-custom-3">
@@ -18,16 +16,15 @@
 <div class="container">
     <form method="post" action="">
         {% csrf_token %}
-        <h2 class="h3 mb-3 fw-normal">Register</h2>
-
-    
+        <h2 class="h3 mb-3 fw-normal" style="font-family: Arial, Helvetica, sans-serif; color: black; font-style:oblique ">Register New User</h2>
+        
         <div class="form-floating mt-2">
-          <input name="username"  type="text" class="form-control" id="floatingInput" placeholder="User Name">
-            <label for="floatingInput">User Name</label>
-          </div>
+          <input name="username" type="text" class="form-control"  placeholder="username">
+          <label for="floatingInput">User Name</label>
+        </div>
 
           <div class="form-floating mt-2">
-            <input name="email" type="email" class="form-control" id="floatingInput" placeholder="Email"/>
+            <input name="email" type="email" class="form-control"  id="floatingInput" placeholder="Email"/>
             <label class="form-label" for="form3Example3cg">Your Email</label>
           </div>
           
@@ -42,6 +39,18 @@
             <label for="floatingInput">Last Name</label>
         </div>
 
+
+        <div class="form-floating mt-2">
+          <input name="company" type="text" class="form-control" id="floatingInput" placeholder="Company">
+          <label for="floatingInput">Company</label>
+      </div>
+
+
+      <div class="form-floating mt-2">
+          <input name="job" type="text" class="form-control" id="floatingInput" placeholder="Job Title">
+          <label for="floatingInput">Job Title</label>
+      </div>
+
         <div class="form-floating mt-2">
             <input name="birth_date" type="date" class="form-control" id="floatingInput" placeholder="birth date">
             <label for="floatingInput">Birth Date</label>
@@ -54,6 +63,9 @@
                 <option value="female">Female</option>
             </select>
         </div>
+
+
+
 
           <div class="form-outline mb-4">
             <input name="password" type="password" class="form-control" id="floatingInput" placeholder="Password" />
@@ -85,4 +97,8 @@
 </section>
 
 {% endblock %}
+
+
+
+
 
