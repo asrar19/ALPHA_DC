@@ -1,8 +1,8 @@
 {% extends 'alpha/index.html' %}
 {% load static %}
-
-
 {% block title %}About{% endblock %}
+
+<link rel="stylesheet" href="{%static 'css/about.css'%}" media="screen">
 
 {% block content %}
 
@@ -12,11 +12,6 @@
     <meta charset="utf-8">
     <meta name="keywords" content="About alpha.DC">
     <meta name="description" content="">
-
-    
-    
-    
-    
     <script type="application/ld+json">{
 		"@context": "http://schema.org",
 		"@type": "Organization",
@@ -29,86 +24,28 @@
 		]
 }</script>
     <meta name="theme-color" content="#478ac9">
-    <meta property="og:title" content="Home">
+    <meta property="og:title" content="about">
     <meta property="og:type" content="website">
   <meta data-intl-tel-input-cdn-path="intlTelInput/">
 </head>
 
+
+
+
+
   <body class="u-body u-xl-mode" data-lang="en">
 
-    <section class="u-align-center u-clearfix u-image u-shading u-section-1" src="" data-image-width="600" data-image-height="337" id="sec-80b0">
-      <div class="u-clearfix u-sheet u-sheet-1">
-        <h1 class="infinite u-custom-font u-font-georgia u-text u-text-body-alt-color u-text-1" data-animation-name="customAnimationIn" data-animation-duration="1000" data-animation-delay="1000">About Alpha.DC</h1>
-        <p class="u-custom-font u-font-merriweather u-text u-text-grey-5 u-text-2"> Here in Alpha.DC we are interested in data centers field ,
-          so made a perfect solution to help you with building your data center in the
-          best way and provide you with all the possible needs for it , but first we will
-          explain what is Data Center..&nbsp;</p>
-      </div>
-    </section>
-    <section class="u-clearfix u-custom-color-3 u-section-2" id="sec-4bb8">
-      <div class="u-clearfix u-sheet u-sheet-1">
-        <div class="u-clearfix u-expanded-width u-gutter-44 u-layout-wrap u-layout-wrap-1">
-          <div class="u-layout">
-            <div class="u-layout-row">
-              <div class="u-container-style u-expand-resize u-layout-cell u-left-cell u-size-28 u-layout-cell-1">
-                <div class="u-container-layout">
-                  <div class="u-align-left u-border-10 u-border-custom-color-4 u-shape u-shape-1"></div>
-                  <img class="u-align-left u-image u-image-1" data-image-width="2000" data-image-height="1125" src="{% static 'images/72172358_m.webp'%}">
-                </div>
-              </div>
-              <div class="u-container-style u-custom-color-1 u-layout-cell u-right-cell u-size-32 u-layout-cell-2">
-                <div class="u-container-layout u-container-layout-2">
-                  <h2 class="u-align-left u-custom-font u-font-georgia u-text u-text-default u-text-1" data-animation-name="bounceIn" data-animation-direction="" data-animation-duration="1000"> What is Data Center ?</h2>
-                  <p class="u-align-center u-custom-font u-font-merriweather u-text u-text-2"><b></b> A data center is a facility that provides shared access to
-applications and data using a complex network, compute, and storage
-infrastructure. Industry standards exist to assist in designing, constructing,
-and maintaining data center facilities and infrastructures to ensure the data
-is both secure and highly available.&nbsp;&nbsp;
-                  </p>
-                </div>
-              </div>
+
+    <section class="u-clearfix u-section-1" id="carousel_d34b">
+      <div class="u-clearfix u-layout-wrap u-layout-wrap-1">
+        <div class="u-layout">
+          <div class="u-layout-row">
+            <div class="u-container-align-left-md u-container-align-left-sm u-container-align-left-xs u-container-style u-image u-layout-cell u-size-30-lg u-size-30-xl u-size-60-md u-size-60-sm u-size-60-xs u-image-1" data-image-width="2560" data-image-height="1440">
+              <div class="u-border-3 u-border-grey-75 u-container-layout u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-container-layout-1"></div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="u-clearfix u-custom-color-1 u-section-3" id="sec-4bfd">
-      <div class="u-clearfix u-sheet u-sheet-1">
-        <h2 class="u-align-center u-custom-font u-font-georgia u-text u-text-default u-text-1"><b>Types Of Data Centers&nbsp;</b>
-          <br>
-        </h2>
-        <div class="u-expanded-width u-list u-list-1">
-          <div class="u-repeater u-repeater-1">
-            <div class="u-align-center u-container-style u-list-item u-repeater-item">
-              <div class="u-container-layout u-similar-container u-container-layout-1"><span class="u-file-icon u-icon u-text-white u-icon-1"><img src="{% static 'images/3425010-5af04a4c.png'%}" alt=""></span>
-                <h3 class="u-custom-font u-font-georgia u-text u-text-2"> Enterprise data centers</h3>
-                <p class="u-custom-font u-font-merriweather u-text u-text-3">&nbsp;are typically constructed and used by a single organization for their own internal purposes. These are common among tech giants.</p>
-              </div>
-            </div>
-            <div class="u-align-center u-container-style u-list-item u-repeater-item">
-              <div class="u-container-layout u-similar-container u-container-layout-2"><span class="u-file-icon u-icon u-text-white u-icon-2"><img src="{% static 'images/9625499-b798a561.png'%}" alt=""></span>
-                <h3 class="u-custom-font u-font-georgia u-text u-text-4"> Colocation data centers</h3>
-                <p class="u-custom-font u-font-merriweather u-text u-text-5">&nbsp;function as a kind of rental property where the space and resources of a data center are made available to the people willing to rent it.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="u-align-center u-clearfix u-custom-color-2 u-section-4" id="sec-3013">
-      <div class="u-align-left u-clearfix u-sheet u-valign-middle u-sheet-1">
-        <div class="u-expanded-width u-list u-list-1">
-          <div class="u-repeater u-repeater-1">
-            <div class="u-container-style u-list-item u-repeater-item">
-              <div class="u-container-layout u-similar-container u-container-layout-1"><span class="u-file-icon u-icon u-text-white u-icon-1"><img src="{% static 'images/9770701-8fc87853.png'%}" alt=""></span>
-                <h3 class="u-align-center u-text u-text-default u-text-1"> Managed service data centers</h3>
-                <p class="u-align-center u-text u-text-2"> &nbsp;offer aspects such as data storage, computing, and other services as a third party, serving customers directly.</p>
-              </div>
-            </div>
-            <div class="u-align-center u-container-style u-list-item u-repeater-item">
-              <div class="u-container-layout u-similar-container u-container-layout-2"><span class="u-file-icon u-icon u-text-white u-icon-2"><img src="{% static 'images/3222791-004b4911.png'%}" alt=""></span>
-                <h3 class="u-align-center u-text u-text-default u-text-3"> Cloud data centers&nbsp;</h3>
-                <p class="u-align-center u-text u-text-4">are distributed and are sometimes offered to customers with the help of a third-party managed service provider.</p>
+            <div class="u-align-center u-container-style u-layout-cell u-shape-rectangle u-size-30-lg u-size-30-xl u-size-60-md u-size-60-sm u-size-60-xs u-layout-cell-2">
+              <div class="u-container-layout u-container-layout-2">
+                <h2 class="u-custom-font u-font-courier-new u-text u-text-custom-color-1 u-text-1" data-animation-name="customAnimationIn" data-animation-duration="1000"> Learn About Data Center</h2>
               </div>
             </div>
           </div>
@@ -116,56 +53,35 @@ is both secure and highly available.&nbsp;&nbsp;
       </div>
     </section>
 
-    <section class=" u-align-center u-clearfix u-custom-color-1 u-section-5"  id="sec-4451">
+    <section class="u-clearfix u-custom-color-1 u-section-2" id="carousel_f301">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <div class="u-container-style u-custom-color-3 u-group u-opacity u-opacity-75 u-radius-50 u-shape-round u-group-1">
-          <div class="u-container-layout u-valign-bottom u-container-layout-1">
-            <h2 class="u-align-center u-text u-text-default u-text-1"> Typical Composition of Data Center Architecture</h2>
-            <p class="u-align-center u-text u-text-default u-text-2">The data center has plenty of functions and supports different types of services, such as data computing, storage, processing, etc, resulting in a variety of data center architecture.The data center architecture mainly consists of three parts: data center network, security, and computing architecture. Apart from these three, there are some other data center architectures, such as data center physical architecture and data center information architecture. The following will mainly interpret three typical compositions of it.</p>
-          </div>
-        </div>
+        <h3 class="u-align-center u-custom-font u-font-raleway u-text u-text-1"> About Alpha.DC</h3>
+        <p class="u-align-center u-custom-font u-font-raleway u-text u-text-grey-10 u-text-2">Here in Alpha.DC we are interested in data centers field , 
+          so made a perfect solution to help you with building your data center in the best way and provide you with all the possible needs for it , 
+          but first we will explain what is Data Center.&nbsp;</p>
       </div>
     </section>
 
-    <section class="u-align-center u-clearfix u-image u-section-6" id="carousel_39c2" data-image-width="2560" data-image-height="1440">
+
+
+    <!--  -->
+    <section class="u-clearfix u-grey-5 u-section-3" id="sec-9e56">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <div class="u-expanded-width u-list u-list-1">
-          <div class="u-repeater u-repeater-1">
-            <div class="u-align-center u-border-15 u-border-custom-color-3 u-border-no-left u-border-no-right u-border-no-top u-container-style u-custom-border u-list-item u-repeater-item u-shape-rectangle u-white u-list-item-1">
-              <div class="u-container-layout u-similar-container u-container-layout-1"><span class="u-file-icon u-icon u-text-custom-color-4 u-icon-1" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><img src="{% static 'images/3211252-3940a4db.png'%}" alt=""></span>
-                <h4 class="u-custom-font u-font-montserrat u-text u-text-default u-text-1"><b>Data Center Computing</b>
-                </h4>
-                <p class="u-text u-text-custom-color-3 u-text-2"> Servers are the engines of the&nbsp; Data centers must use processors that are best suited for the
-task, e.g. general purpose CPUs may not be the best choice to solve artificial
-intelligence (AI) and machine learning (ML) problems.
-&nbsp;</p>
-              </div>
-            </div>
-            <div class="u-align-center u-border-15 u-border-custom-color-3 u-border-no-left u-border-no-right u-border-no-top u-container-style u-custom-border u-list-item u-repeater-item u-shape-rectangle u-white u-list-item-2">
-              <div class="u-container-layout u-similar-container u-container-layout-2"><span class="u-file-icon u-icon u-text-custom-color-4 u-icon-2"><img src="{% static 'images/3160887-3f8ee026.png'%}" alt=""></span>
-                <h4 class="u-custom-font u-font-montserrat u-text u-text-default u-text-3"> Data Center Storage</h4>
-                <p class="u-text u-text-custom-color-3 u-text-4"> Data centers host large quantities of sensitive information, both for their own purposes and the needs of their customers. Decreasing costs of storage media increases the amount of storage available for backing up the data either locally, remote, or both. Advancements in non-volatile storage media lowers data access times.&nbsp;</p>
-              </div>
-            </div>
-            <div class="u-align-center u-border-15 u-border-custom-color-3 u-border-no-left u-border-no-right u-border-no-top u-container-style u-custom-border u-list-item u-repeater-item u-shape-rectangle u-white u-list-item-3">
-              <div class="u-container-layout u-similar-container u-container-layout-3"><span class="u-file-icon u-icon u-text-custom-color-4 u-icon-3" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><img src="{% static 'images/1231223-37472721.png'%}" alt=""></span>
-                <h4 class="u-custom-font u-font-montserrat u-text u-text-default u-text-5"><b>Data Center Networks</b>
-                </h4>
-                <p class="u-text u-text-custom-color-3 u-text-6"> Datacenter network equipment includes cabling, switches, routers, and firewalls that connect servers together and to the outside world. Properly configured and structured, they can manage high volumes of trafficwithout compromising performance.&nbsp;</p>
-              </div>
-            </div>
-          </div>
-        </div>
+   
+        <h3 class="u-custom-font u-font-raleway u-text u-text-custom-color-1 u-text-1">What is Data center?</h3> 
+        <p class="u-custom-font u-font-raleway u-text u-text-custom-color-2 u-text-2"> A data center is a physical room, building or facility that houses IT infrastructure for building, running, and delivering applications and services, and for storing and managing the data associated with those applications and services.Data centers have evolved in recent years from privately-owned, tightly-controlled on-premises facilities housing traditional IT infrastructure for the exclusive use of one company, to remote facilities or networks of facilities owned by cloud service providers housing virtualized IT infrastructure for the shared use of multiple companies and customers.
+        </p>
       </div>
     </section>
-    
   
 
 
 
-
-
-
+    <section class="u-clearfix u-custom-color-1 u-section-4" id="sec-a2a2">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+            <iframe style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;" class="embed-responsive-item" src="https://www.youtube.com/embed/Amow8BJm5Go?mute=0&amp;showinfo=0&amp;controls=0&amp;start=0" frameborder="0" allowfullscreen=""></iframe>
+      </div>
+    </section>
     
 
 <div id="service" class="Services">
@@ -173,9 +89,8 @@ intelligence (AI) and machine learning (ML) problems.
      <div class="row">
         <div class="col-md-12">
            <div class="titlepage">
-              <h2>Best Services</h2>
-              <p>Lorem ipsum dolor sittem ametamngcing elit, per sed do eiusmoad <br>
-                 teimpor sittem elit inuning ut sed.
+              <h2>Types Of Data Centers </h2>
+              <p>There is 4 primary types of Data Center 
               </p>
            </div>
         </div>
@@ -184,49 +99,39 @@ intelligence (AI) and machine learning (ML) problems.
         <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
            <div class="Services-box">
               <i><img src="{% static 'images/service1.png'%}" alt="#" /></i>
-              <h3> Shared Hosting</h3>
-              <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci.</p>
+              <h3> Enterprise data centers</h3>
+              <p>are typically constructed and used by a single organization for their own internal purposes. These are common among tech giants.</p>
            </div>
         </div>
         <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
            <div class="Services-box">
               <i><img src="{% static 'images/service2.png'%}" alt="#" /></i>
-              <h3>Dedicated Hosting</h3>
-              <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci.</p>
+              <h3>Colocation data centers</h3>
+              <p>function as a kind of rental property where the space and resources of a data center are made available to the people willing to rent it.</p>
            </div>
         </div>
         <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
            <div class="Services-box">
               <i><img src="{% static 'images/service3.png'%}" alt="#" /></i>
-              <h3>Domain Registration</h3>
-              <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci.</p>
+              <h3>Managed service data centers</h3>
+              <p>offer aspects such as data storage, computing, and other services as a third party, serving customers directly.</p>
            </div>
         </div>
         <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
            <div class="Services-box">
               <i><img src="{% static 'images/service4.png'%}" alt="#" /></i>
-              <h3>VPS Hosting</h3>
-              <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci.</p>
+              <h3>Cloud data centers</h3>
+              <p>are distributed and are sometimes offered to customers with the help of a third-party managed service provider.</p>
            </div>
         </div>
-        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-           <div class="Services-box">
-              <i><img src="{% static 'images/service5.png'%}" alt="#" /></i>
-              <h3>Cloud Hosting</h3>
-              <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci.</p>
-           </div>
-        </div>
-        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-           <div class="Services-box">
-              <i><img src="{% static 'images/service6.png'%}" alt="#" /></i>
-              <h3>Reseller Hosting</h3>
-              <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci.</p>
-           </div>
-        </div>
-        <a class="read_more" href="#">Read More</a>
+
+
+    
      </div>
   </div>
 </div>
+
+
 <!-- end Servicess -->
 <!-- why -->
 <div id="why" class="why">
@@ -234,35 +139,35 @@ intelligence (AI) and machine learning (ML) problems.
      <div class="row">
         <div class="col-md-12">
            <div class="titlepage">
-              <h2>Why you should choose </h2>
-              <p>making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still </p>
+              <h2>Typical Composition of Data Center Architecture</h2>
+              <p>The data center has plenty of functions and supports different types of services, such as data computing, storage, processing, etc, resulting in a variety of data center architecture.The data center architecture mainly consists of three parts: data center network, security, and computing architecture. Apart from these three, there are some other data center architectures, such as data center physical architecture and data center information architecture. The following will mainly interpret three typical compositions of it. </p>
            </div>
         </div>
      </div>
      <div class="row">
         <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
            <div id="box_ho" class="why-box">
-              <i><img src="{% static 'images/why1.png'%}" alt="#" /></i>
-              <h3>Powerful Features</h3>
-              <p>making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still </p>
+              <i><img src="{% static 'images/3211252-3940a4db.png'%}" alt="#" /></i>
+              <h3>Data Center Computing</h3>
+              <p>Servers are the engines of the Data centers must use processors that are best suited for the
+                task, e.g. general purpose CPUs may not be the best choice to solve artificial
+                intelligence (AI) and machine learning (ML) problems.
+              </p>
            </div>
-           <a class="read_more bg" href="#">Read More</a>
         </div>
         <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
            <div class="why-box">
-              <i><img src="{% static 'images/why2.png'%}" alt="#" /></i>
-              <h3>Totaly Optimised</h3>
-              <p>making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still </p>
+              <i><img src="{% static 'images/3160887-3f8ee026.png'%}" alt="#" /></i>
+              <h3>Data Center Storage</h3>
+              <p>Data centers host large quantities of sensitive information, both for their own purposes and the needs of their customers. Decreasing costs of storage media increases the amount of storage available for backing up the data either locally, remote, or both. Advancements in non-volatile storage media lowers data access times.</p>
            </div>
-           <a class="read_more bg" href="#">Read More</a>
         </div>
         <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
            <div class="why-box">
-              <i><img src="{% static 'images/why3.png'%}" alt="#" /></i>
-              <h3>Worldwide Support</h3>
-              <p>making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still </p>
+              <i><img src="{% static 'images/1231223-37472721.png'%}" alt="#" /></i>
+              <h3>Data Center Networks</h3>
+              <p>Datacenter network equipment includes cabling, switches, routers, and firewalls that connect servers together and to the outside world. Properly configured and structured, they can manage high volumes of trafficwithout compromising performance. </p>
            </div>
-           <a class="read_more bg" href="#">Read More</a>
         </div>
      </div>
   </div>

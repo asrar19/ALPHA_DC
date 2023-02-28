@@ -27,6 +27,7 @@
       <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
       <link rel="stylesheet" href="{%static 'css/nicepage.css' %}" media="screen">
+      <link rel="stylesheet" href="{%static 'css/Home.css' %}" media="screen">
       <link rel="stylesheet" href="{%static 'css/about.css' %}" media="screen">
       <link rel="stylesheet" href="{%static 'css/contact.css' %}" media="screen">
       <script class="u-script" type="text/javascript" src="{%static 'js/jquery.js' %}" defer=""></script>
@@ -35,112 +36,475 @@
       <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
       <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i|Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
       
-      
-    
+      <!-------------------------------------------------------------------->
 
 
+       <script type="application/ld+json">{
+         "@context": "http://schema.org",
+         "@type": "Organization",
+         "name": "Site3",
+         "logo": "images/logo.png",
+         "sameAs": [
+               "https://github.com/asrar19",
+               "https://www.instagram.com/ar110s",
+               "https://www.linkedin.com/in/asrar747"
+         ]
+   }</script>
+       <meta name="theme-color" content="#478ac9">
+       <meta property="og:title" content="Home">
+       <meta property="og:description" content="">
+       <meta property="og:type" content="website">
+     <meta data-intl-tel-input-cdn-path="intlTelInput/">
+   
    </head>
 
 
 
-
-   <!-- body -->
-   <body class="main-layout">
-      <!-- loader  -->
-      <div class="loader_bg">
-         <div class="loader"><img src="{% static 'images/loading.gif'%}" alt="#" /></div>
-      </div>
-      <!-- end loader -->
-      <!-- header -->
-      <header>
-         <!-- header inner -->
-         <div class="header">
-            <div class="container">
-               <div class="row">
-                  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
-                     <div class="full">
-                        <div class="center-desk">
-                           <div class="logo">
-                              <img src="{% static 'images/2logo.png'%}" alt="#" />
-                           </div>
+   <header>
+      <!-- header inner -->
+      <div class="header">
+         <div class="container">
+            <div class="row">
+               <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                  <div class="full">
+                     <div class="center-desk">
+                        <div class="logo">
+                           <img src="{% static 'images/2logo.png'%}" alt="#" />
                         </div>
                      </div>
                   </div>
-                  <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
-                     <nav class="navigation navbar navbar-expand-md navbar-dark ">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse active" id="navbarsExample04">
-                           <ul class="navbar-nav mr-auto ">
-                              <li class="nav-item ">
-                                 <a class="nav-link" href="{% url 'alpha:home' %}">Home</a>
-                              </li>
-                              <li class="nav-item">
-                                 <a class="nav-link" href="{% url 'alpha:about' %}">About</a>
-                              </li>
-    
-                              <li class="nav-item">
-                                 <a class="nav-link" href="{% url 'alpha:contact' %}">Contact</a>
-                              </li>
-                              {% if request.user.is_authenticated %}
-                              <li class="nav-item"><a class="nav-link" href="{% url 'alpha:services' %}">Services</a> </li>
-                              {% endif %}
-                                             
-                              {% if request.user.is_authenticated %}
-                              <li class="nav-item"><a href="{% url 'users:sign_out' %}" class="nav-link">Sign out</a></li>
-                              {% else %}
-                              <li class="nav-item"><a href="{% url 'users:sign_in' %}" class="nav-link">Sign in</a></li>
-                              {% endif %}
-                            </ul>
-                        </div>
-                     </nav>
-                  </div>
+               </div>
+               <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                  <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                     </button>
+                     <div class="collapse navbar-collapse active" id="navbarsExample04">
+                        <ul class="navbar-nav mr-auto ">
+                           <li class="nav-item ">
+                              <a class="nav-link u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-custom-color-4 u-text-hover-custom-color-4"  href="{% url 'alpha:home' %}">Home</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-custom-color-4 u-text-hover-custom-color-4"  href="{% url 'alpha:about' %}">About</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-custom-color-4 u-text-hover-custom-color-4" href="{% url 'alpha:contact' %}">Contact</a>
+                           </li>
+                           {% if request.user.is_authenticated %}
+                           <li class="nav-item">
+                              <a class="nav-link nav-link u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-custom-color-4 u-text-hover-custom-color-4"  href="{% url 'alpha:services' %}">Services</a> </li>
+                           {% endif %}
+                                          
+                           {% if request.user.is_authenticated %}
+                           <li class="nav-item">
+                              <a href="{% url 'users:sign_out' %}" class="nav-link nav-link u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-custom-color-4 u-text-hover-custom-color-4">Sign out</a></li>
+                           {% else %}
+                           <li class="nav-item">
+                              <a href="{% url 'users:sign_in' %}" class="nav-link nav-link u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-custom-color-4 u-text-hover-custom-color-4">Sign in</a></li>
+                           {% endif %}
+                         </ul>
+                     </div>
+                  </nav>
                </div>
             </div>
          </div>
-      </header>
+      </div>
 
 
 
-      <!-- end header inner -->
-      <!-- end header -->
-      <!-- banner -->
 
-      {% block content%}
+   <style class="u-sticky-style" data-style-id="014c">
+   .u-sticky-fixed.u-sticky-014c, .u-body.u-sticky-fixed .u-sticky-014c {
+   box-shadow: 0px 2px 8px 0px rgba(128,128,128,1) !important
+   }</style>
+   </header>
 
- 
 
-      {% endblock %}
-      <footer class="u-clearfix u-custom-color-1 u-footer" id="sec-23ca"><div class="u-clearfix u-sheet u-sheet-1">
-         <p class="u-custom-font u-font-merriweather u-hover-feature u-text u-text-default u-text-1" data-animation-name="pulse" data-animation-direction="">Made with passion and love&nbsp;&nbsp;<span class="u-file-icon u-icon"><img src="{% static 'images/833472.png'%}" alt=""></span>
-         </p>
-         <div class="u-align-left u-social-icons u-spacing-10 u-social-icons-1">
-           <a class="u-social-url" title="github" target="_blank" href="https://github.com/asrar19"><span class="u-file-icon u-icon u-social-facebook u-social-icon u-icon-2"><img src="{% static 'images/733553.png'%}" alt=""></span>
-           </a>
-           <a class="u-social-url" title="instagram" target="_blank" href="https://www.instagram.com/ar110s"><span class="u-icon u-social-icon u-social-instagram u-icon-3"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-b47c"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-b47c"><circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M55.9,38.2c-9.9,0-17.9,8-17.9,17.9C38,66,46,74,55.9,74c9.9,0,17.9-8,17.9-17.9C73.8,46.2,65.8,38.2,55.9,38.2
-       z M55.9,66.4c-5.7,0-10.3-4.6-10.3-10.3c-0.1-5.7,4.6-10.3,10.3-10.3c5.7,0,10.3,4.6,10.3,10.3C66.2,61.8,61.6,66.4,55.9,66.4z"></path><path fill="#FFFFFF" d="M74.3,33.5c-2.3,0-4.2,1.9-4.2,4.2s1.9,4.2,4.2,4.2s4.2-1.9,4.2-4.2S76.6,33.5,74.3,33.5z"></path><path fill="#FFFFFF" d="M73.1,21.3H38.6c-9.7,0-17.5,7.9-17.5,17.5v34.5c0,9.7,7.9,17.6,17.5,17.6h34.5c9.7,0,17.5-7.9,17.5-17.5V38.8
-       C90.6,29.1,82.7,21.3,73.1,21.3z M83,73.3c0,5.5-4.5,9.9-9.9,9.9H38.6c-5.5,0-9.9-4.5-9.9-9.9V38.8c0-5.5,4.5-9.9,9.9-9.9h34.5
-       c5.5,0,9.9,4.5,9.9,9.9V73.3z"></path></svg></span>
-           </a>
-           <a class="u-social-url" title="linkedin" target="_blank" href="https://www.linkedin.com/in/asrar747"><span class="u-icon u-social-icon u-social-linkedin u-icon-4"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-c5dc"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-c5dc"><circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M41.3,83.7H27.9V43.4h13.4V83.7z M34.6,37.9L34.6,37.9c-4.6,0-7.5-3.1-7.5-7c0-4,3-7,7.6-7s7.4,3,7.5,7
-       C42.2,34.8,39.2,37.9,34.6,37.9z M89.6,83.7H76.2V62.2c0-5.4-1.9-9.1-6.8-9.1c-3.7,0-5.9,2.5-6.9,4.9c-0.4,0.9-0.4,2.1-0.4,3.3v22.5
-       H48.7c0,0,0.2-36.5,0-40.3h13.4v5.7c1.8-2.7,5-6.7,12.1-6.7c8.8,0,15.4,5.8,15.4,18.1V83.7z"></path></svg></span>
-           </a>
+{% block content %}
+       <section class="u-clearfix u-custom-color-2 u-section-1" id="sec-c8b9">
+         <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+           <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+             <div class="u-layout">
+               <div class="u-layout-row">
+                 <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-1">
+                   <div class="u-container-layout u-container-layout-1">
+                     <h1 class="u-align-left u-custom-font u-font-raleway u-text u-text-1" data-animation-name="pulse" data-animation-direction="" data-animation-duration="1000">ALPHA DC</h1>
+                     <h4 class="u-align-left u-custom-font u-font-courier-new u-text u-text-grey-30 u-text-2"> for Data Center&nbsp;</h4>
+                     <div class="u-expanded-width-xs u-list u-list-1">
+                       <div class="u-repeater u-repeater-1">
+                         <div class="u-container-style u-list-item u-repeater-item u-video-cover u-white u-list-item-1">
+                           <div class="u-container-layout u-similar-container u-valign-top u-container-layout-2"><span class="u-file-icon u-icon u-icon-circle u-palette-5-light-2 u-icon-1"><img src="{%static 'images/1208913.png'%}" alt=""></span>
+                             <h4 class="u-align-center u-text u-text-3">Data STORAGE</h4>
+                           </div>
+                         </div>
+                         <div class="u-align-center u-container-style u-list-item u-repeater-item u-video-cover u-white u-list-item-2">
+                           <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3"><span class="u-file-icon u-icon u-icon-circle u-palette-5-light-2 u-icon-2"><img src="{%static 'images/3234971.png'%}" alt=""></span>
+                             <h4 class="u-text u-text-4">Design</h4>
+                           </div>
+                         </div>
+                         <div class="u-align-center u-container-style u-list-item u-repeater-item u-video-cover u-white u-list-item-3">
+                           <div class="u-container-layout u-similar-container u-valign-top u-container-layout-4"><span class="u-file-icon u-icon u-icon-circle u-palette-5-light-2 u-icon-3"><img src="{%static 'images/555038.png'%}" alt=""></span>
+                             <h4 class="u-text u-text-5">development</h4>
+                           </div>
+                         </div>
+                         <div class="u-align-center u-container-style u-list-item u-repeater-item u-video-cover u-white u-list-item-4">
+                           <div class="u-container-layout u-similar-container u-valign-top u-container-layout-5"><span class="u-file-icon u-icon u-icon-circle u-palette-5-light-2 u-icon-4"><img src="{% static 'images/3281188.png'%}" alt=""></span>
+                             <h4 class="u-text u-text-6">testing</h4>
+                           </div>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-2">
+                   <div class="u-border-4 u-border-grey-10 u-container-layout u-valign-middle u-container-layout-6">
+                     <img class="u-image u-image-1" src="{%static 'images/Facility-Resource-Utilization-scaled.jpg'%}" data-image-width="2560" data-image-height="1440">
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
          </div>
-       </div></footer>
+       </section>
 
-      <!-- end footer -->
-      <!-- Javascript files-->
-      <script src="{% static 'js/jquery.min.js'%}"></script>
-      <script src="{% static 'js/popper.min.js'%}"></script>
-      <script src="{% static 'js/bootstrap.bundle.min.js'%}"></script>
-      <script src="{% static 'js/jquery-3.0.0.min.js'%}"></script>
-      <script src="{% static 'js/plugin.js'%}"></script>
-      <!-- sidebar -->
-      <script src="{% static 'js/jquery.mCustomScrollbar.concat.min.js'%}"></script>
-      <script src="{% static 'js/custom.js'%}"></script>
-      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+
+       <section class="u-clearfix u-image u-section-2" id="sec-f0a5" data-image-width="1980" data-image-height="1321">
+         <div class="u-clearfix u-sheet u-sheet-1">
+           <div class="u-clearfix  u-layout-wrap u-layout-wrap-1">
+             <div class="u-layout">
+               <div class="u-layout-row">
+
+                 <div class="u-align-center u-container-style u-layout-cell u-shape-rectangle u-size-36-lg u-size-36-xl u-size-60-md u-size-60-sm u-size-60-xs u-layout-cell-2">
+                   <div class="u-container-layout u-container-layout-2">
+                     <div class="u-container-layout u-valign-middle u-container-layout-1">
+                        <span class="u-file-icon u-icon u-icon-rectangle u-icon-1" data-animation-name="customAnimationIn" data-animation-duration="1750" data-animation-direction="" data-animation-delay="1500"><img src="{%static 'images/1464393.png'%}" alt=""></span>
+                     <h2 class="u-custom-font u-font-raleway u-text u-text-1">Alpha DC Vision</h2>
+                     <p class="u-text u-text-2"> Alpha DC is a startup company that is concerned with data centers and their development. It focuses on designing medium-sized data centers in the Kingdom of Saudi Arabia, and the most important thing that distinguishes it is its Saudi staff.</p>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+       </section>
+       <section class="u-clearfix u-custom-color-2 u-section-3" id="carousel_efe0">
+         <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+           <div class="u-gallery u-layout-grid u-lightbox u-no-transition u-show-text-on-hover u-gallery-1">
+             <div class="u-gallery-inner u-gallery-inner-1">
+               <div class="u-effect-fade u-gallery-item">
+                 <div class="u-back-slide" data-image-width="860" data-image-height="573">
+                   <img class="u-back-image u-expanded" src="{%static 'images/im-611500.jfif'%}">
+                 </div>
+                 <div class="u-over-slide u-shading u-over-slide-1">
+                   <h3 class="u-gallery-heading"></h3>
+                   <p class="u-gallery-text"></p>
+                 </div>
+               </div>
+               <div class="u-effect-fade u-gallery-item">
+                 <div class="u-back-slide" data-image-width="1200" data-image-height="800">
+                   <img class="u-back-image u-expanded" src="{%static 'images/datacenter_ncc.webp'%}">
+                 </div>
+                 <div class="u-over-slide u-shading u-over-slide-2">
+                   <h3 class="u-gallery-heading"></h3>
+                   <p class="u-gallery-text"></p>
+                 </div>
+               </div>
+               <div class="u-effect-fade u-gallery-item">
+                 <div class="u-back-slide" data-image-width="640" data-image-height="487">
+                   <img class="u-back-image u-expanded" src="{%static 'images/Datacenter-telecom_edit2.jpg'%}">
+                 </div>
+                 <div class="u-over-slide u-shading u-over-slide-3">
+                   <h3 class="u-gallery-heading"></h3>
+                   <p class="u-gallery-text"></p>
+                 </div>
+               </div>
+               <div class="u-effect-fade u-gallery-item">
+                 <div class="u-back-slide" data-image-width="800" data-image-height="350">
+                   <img class="u-back-image u-expanded" src="{%static 'images/what-is-data-center-virtualization.jpg'%}">
+                 </div>
+                 <div class="u-over-slide u-shading u-over-slide-4">
+                   <h3 class="u-gallery-heading"></h3>
+                   <p class="u-gallery-text"></p>
+                 </div>
+               </div>
+               <div class="u-effect-fade u-gallery-item">
+                 <div class="u-back-slide" data-image-width="1540" data-image-height="800">
+                   <img class="u-back-image u-expanded" src="{%static 'images/datacenternetworkart3.jpg'%}">
+                 </div>
+                 <div class="u-over-slide u-shading u-over-slide-5">
+                   <h3 class="u-gallery-heading"></h3>
+                   <p class="u-gallery-text"></p>
+                 </div>
+               </div>
+               <div class="u-effect-fade u-gallery-item" data-image-width="275" data-image-height="183">
+                 <div class="u-back-slide">
+                   <img class="u-back-image u-expanded" src="{%static 'images/2222.jfif'%}">
+                 </div>
+                 <div class="u-over-slide u-shading u-over-slide-6">
+                   <h3 class="u-gallery-heading"></h3>
+                   <p class="u-gallery-text"></p>
+                 </div>
+               </div>
+             </div>
+           </div>
+           <div class="u-align-center u-container-style u-expanded-width-xs u-group u-radius-10 u-shape-round u-white u-group-1">
+             <div class="u-container-layout u-container-layout-1">
+               <h2 class="u-custom-font u-font-raleway u-text u-text-1">Our Data Centers</h2>
+               <p class="u-custom-font u-font-courier-new u-text u-text-2"> These are some of our data centers, our previous customers from all over the world, they could be our future customers too!!</p>
+               <a href="https://nicepage.com/k/offer-html-templates" class="u-active-custom-color-2 u-align-left u-border-none u-btn u-btn-round u-button-style u-custom-color-5 u-custom-font u-font-raleway u-hover-custom-color-2 u-radius-10 u-text-body-alt-color u-btn-1" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="">learn more</a>
+             </div>
+           </div>
+         </div>
+       </section>
+       <section class="u-align-center u-clearfix u-grey-5 u-section-4" id="carousel_e658">
+         <div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-sheet-1">
+           <h2 class="u-custom-font u-font-raleway u-text u-text-default u-text-1">Feedback</h2>
+           <p class="u-custom-font u-font-courier-new u-text u-text-2"> Feedback from our valued customers</p>
+           <div class="u-border-3 u-border-custom-color-4 u-line u-line-horizontal u-line-1"></div>
+           <div class="u-layout-grid u-list u-list-1">
+             <div class="u-repeater u-repeater-1">
+               <div class="u-align-left u-container-style u-list-item u-radius-10 u-repeater-item u-shape-round u-white u-list-item-1">
+                 <div class="u-container-layout u-similar-container u-container-layout-1">
+                   <div class="u-container-style u-group u-shape-rectangle u-group-1">
+                     <div class="u-container-layout u-container-layout-2"><span class="u-file-icon u-icon u-text-palette-1-light-2 u-icon-1"><img src="{%static 'images/59149-207ff6b7.png'%}" alt=""></span>
+                       <h5 class="u-align-left u-text u-text-3">Celia Almeda</h5>
+                     </div>
+                   </div>
+                   <div alt="" class="u-border-7 u-border-palette-1-base u-image u-image-circle u-image-1" data-image-width="1000" data-image-height="876"></div>
+                   <p class="u-text u-text-4">This is the best company for building any data center&nbsp;</p>
+                 </div>
+               </div>
+               <div class="u-align-left u-container-style u-list-item u-radius-10 u-repeater-item u-shape-round u-white u-list-item-2">
+                 <div class="u-container-layout u-similar-container u-container-layout-3">
+                   <div class="u-container-style u-group u-shape-rectangle u-group-2">
+                     <div class="u-container-layout u-container-layout-4"><span class="u-file-icon u-icon u-text-palette-1-light-2 u-icon-2"><img src="{%static 'images/59149-207ff6b7.png'%}" alt=""></span>
+                       <h5 class="u-align-left u-text u-text-5">Frank Kinney</h5>
+                     </div>
+                   </div>
+                   <div alt="" class="u-border-7 u-border-palette-1-base u-image u-image-circle u-image-2" data-image-width="126" data-image-height="126"></div>
+                   <p class="u-text u-text-6">alpha dc are focusing on designing data center in the perfect way to build it&nbsp;</p>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+       </section>
+       
+       {% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       <footer class="u-clearfix u-custom-color-1 u-footer" id="sec-23ca"><div class="u-clearfix u-sheet u-sheet-1">
+           <p class="u-custom-font u-font-merriweather u-hover-feature u-text u-text-default u-text-1" data-animation-name="pulse" data-animation-direction="">Made with passion and love&nbsp;&nbsp;<span class="u-file-icon u-icon"><img src="{% static 'images/833472.png'%}" alt=""></span>
+           </p>
+           <div class="u-align-left u-social-icons u-spacing-10 u-social-icons-1">
+
+             <a class="u-social-url" title="github" target="_blank" href="https://github.com/asrar19">
+               <span class="u-file-icon u-icon u-social-github u-social-icon u-icon-2" >
+               <img src="{%static 'images/733553-aa15cdfc.png'%}" alt=""></span>
+             </a>
+
+        
+
+
+             <a class="u-social-url" title="linkedin" target="_blank" href="https://www.linkedin.com/in/asrar747"><span class="u-icon u-social-icon u-social-linkedin u-icon-4">
+               <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style="">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-c5dc"></use></svg>
+                  <svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-c5dc">
+                     <circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M41.3,83.7H27.9V43.4h13.4V83.7z M34.6,37.9L34.6,37.9c-4.6,0-7.5-3.1-7.5-7c0-4,3-7,7.6-7s7.4,3,7.5,7
+         C42.2,34.8,39.2,37.9,34.6,37.9z M89.6,83.7H76.2V62.2c0-5.4-1.9-9.1-6.8-9.1c-3.7,0-5.9,2.5-6.9,4.9c-0.4,0.9-0.4,2.1-0.4,3.3v22.5
+         H48.7c0,0,0.2-36.5,0-40.3h13.4v5.7c1.8-2.7,5-6.7,12.1-6.7c8.8,0,15.4,5.8,15.4,18.1V83.7z"></path></svg></span>
+             </a>
+             <a class="u-social-url" target="_blank" data-type="Custom" title="Custom" href="">
+               <span class="u-file-icon u-icon u-social-custom u-social-icon u-icon-5">
+                  <img src="{%static 'images/5968756-68b0a49d.png'%}" alt=""></span>
+             </a>
+           
+  
+         </div>
+         </div></footer>
+    
+       
+       
+       
+       
+       
+       
+       
+       <section class="u-align-center u-clearfix u-cookies-consent u-palette-5-dark-1 u-cookies-consent" id="sec-d71f">
+         <div class="u-clearfix u-sheet u-sheet-1">
+           <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+             <div class="u-gutter-0 u-layout">
+               <div class="u-layout-row">
+                 <div class="u-container-style u-layout-cell u-left-cell u-size-43-md u-size-43-sm u-size-43-xs u-size-46-lg u-size-46-xl u-layout-cell-1">
+                   <div class="u-container-layout u-valign-middle u-container-layout-1">
+                     <h3 class="u-text u-text-default u-text-1">Cookies &amp; Privacy</h3>
+                     <p class="u-text u-text-default u-text-2">This website uses cookies to ensure you get the best experience on our website.</p>
+                   </div>
+                 </div>
+                 <div class="u-align-left u-container-style u-layout-cell u-right-cell u-size-14-lg u-size-14-xl u-size-17-md u-size-17-sm u-size-17-xs u-layout-cell-2">
+                   <div class="u-container-layout u-valign-middle-lg u-valign-middle-md u-valign-middle-xl u-valign-top-sm u-valign-top-xs u-container-layout-2">
+                     <a href="###" class="u-btn u-button-confirm u-button-style u-palette-1-base u-btn-1">Confirm</a>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+
+
+
+
+
+
+
+
+
+
+       <style> .u-cookies-consent {
+     background-image: none;
+   }
+   
+   .u-cookies-consent .u-sheet-1 {
+     min-height: 212px;
+   }
+   
+   .u-cookies-consent .u-layout-wrap-1 {
+     margin-top: 30px;
+     margin-bottom: 30px;
+   }
+   
+   .u-cookies-consent .u-layout-cell-1 {
+     min-height: 152px;
+   }
+   
+   .u-cookies-consent .u-container-layout-1 {
+     padding: 30px 60px;
+   }
+   
+   .u-cookies-consent .u-text-1 {
+     margin-top: 0;
+     margin-right: 20px;
+     margin-bottom: 0;
+   }
+   
+   .u-cookies-consent .u-text-2 {
+     margin: 8px 20px 0 0;
+   }
+   
+   .u-cookies-consent .u-layout-cell-2 {
+     min-height: 152px;
+   }
+   
+   .u-cookies-consent .u-container-layout-2 {
+     padding: 30px;
+   }
+   
+   .u-cookies-consent .u-btn-1 {
+     margin: 0 auto 0 0;
+   }
+   
+   @media (max-width: 1199px) {
+     .u-cookies-consent .u-sheet-1 {
+       min-height: 131px;
+     }
+   
+     .u-cookies-consent .u-layout-cell-1 {
+       min-height: 125px;
+     }
+   
+     .u-cookies-consent .u-text-1 {
+       margin-right: 0;
+     }
+   
+     .u-cookies-consent .u-text-2 {
+       margin-right: 0;
+     }
+   
+     .u-cookies-consent .u-layout-cell-2 {
+       min-height: 125px;
+     }
+   }
+   
+   @media (max-width: 991px) {
+     .u-cookies-consent .u-sheet-1 {
+       min-height: 106px;
+     }
+   
+     .u-cookies-consent .u-layout-cell-1 {
+       min-height: 100px;
+     }
+   
+     .u-cookies-consent .u-container-layout-1 {
+       padding-left: 30px;
+       padding-right: 30px;
+     }
+   
+     .u-cookies-consent .u-layout-cell-2 {
+       min-height: 100px;
+     }
+   }
+   
+   @media (max-width: 767px) {
+     .u-cookies-consent .u-sheet-1 {
+       min-height: 225px;
+     }
+   
+     .u-cookies-consent .u-layout-cell-1 {
+       min-height: 154px;
+     }
+   
+     .u-cookies-consent .u-container-layout-1 {
+       padding-left: 10px;
+       padding-right: 10px;
+       padding-bottom: 20px;
+     }
+   
+     .u-cookies-consent .u-layout-cell-2 {
+       min-height: 65px;
+     }
+   
+     .u-cookies-consent .u-container-layout-2 {
+       padding: 10px;
+     }
+   }
+   
+   @media (max-width: 575px) {
+     .u-cookies-consent .u-sheet-1 {
+       min-height: 121px;
+     }
+   
+     .u-cookies-consent .u-layout-cell-1 {
+       min-height: 100px;
+     }
+   
+     .u-cookies-consent .u-layout-cell-2 {
+       min-height: 15px;
+     }
+   }</style></section>
+   
+   <span style="height: 64px; width: 64px; margin-left: 0px; margin-right: auto; margin-top: 0px; right: 185px; bottom: 60px;" class="u-back-to-top u-icon u-opacity u-opacity-85 u-text-white" data-href="#">
+           <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 551.13 551.13"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-1d98"></use></svg>
+           <svg class="u-svg-content" enable-background="new 0 0 551.13 551.13" viewBox="0 0 551.13 551.13" xmlns="http://www.w3.org/2000/svg" id="svg-1d98"><path d="m275.565 189.451 223.897 223.897h51.668l-275.565-275.565-275.565 275.565h51.668z"></path></svg>
+       </span>
+     
    </body>
-</html>
+   </html>
+
+
+
+
+
 

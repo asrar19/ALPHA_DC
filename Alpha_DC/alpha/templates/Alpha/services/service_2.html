@@ -19,7 +19,105 @@
 <h1>Welcome to our services</h1>
 <h3>here you can learn how to build your data center </h3>
 <hr>
-<h2> Your sevrice 2 !!</h2>
+<h2> This is sevrice 2 </h2>
+<h4>your choices are :</h4>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">nodes</th>
+      <th scope="col">tier level</th>
+      <th scope="col">facility size</th>
+      <th scope="col">room area (SQFT)</th>
+
+    </tr>
+  </thead>
+  <tbody>
+  
+    <tr>
+      <th scope="row">1</th>
+      <td>30-60</td>
+      <td>II</td>
+      <td>Medium</td>
+      <td>{{request.POST.sqft}}</td>
+
+  </tbody>
+</table>
+
+
+<h4>Tier II Features </h4>
+<!--   Tier level     -->
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Feature</th>
+      <th scope="col">Tier II</th>
+
+
+    </tr>
+  </thead>
+  <tbody>
+  
+    <tr>
+      <th scope="row">1</th>
+      <td>Uptime guarantee</td>
+      <td>99.741%		</td>
+    </tr>
+
+    <tr>
+      <th scope="row">2</th>
+      <td>Downtime per year	</td>
+      <td> more than 22 hours	</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Component redundancy	</td>
+      <td>Partial power and cooling redundancy (partial N+1)</td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>Concurrently maintainable	</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <th scope="row">5</th>
+      <td>Price</td>
+      <td>$$</td>
+    </tr>
+    <tr>
+      <th scope="row">6</th>
+      <td>Compartmentalization</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <th scope="row">7</th>
+      <td>Staffing</td>
+      <td>1 shift</td>
+    </tr>
+
+    <tr>
+      <th scope="row">8</th>
+      <td>Typical customer</td>
+      <td>SMBs</td>
+    </tr>
+
+    <tr>
+      <th scope="row">9</th>
+      <td>The main reason why companies select this tier</td>
+      <td>A good cost-to-performance ratio	</td>
+    </tr>
+
+  </tbody>
+</table>
+
+
+<!--   Tier level     -->
+
+
+
 
 
 <table class="table">
@@ -37,7 +135,7 @@
     <tbody>
     
       <tr>
-        <th scope="row">2</th>
+        <th scope="row">1</th>
         <td>Building Shell</td>
         <td>{{request.POST.sqft}}</td>
         <td>$80</td>
@@ -49,7 +147,7 @@
 
 
       <tr>
-      <th scope="row">4</th>
+      <th scope="row">2</th>
       <td>Electrical Systems</td>
       <td>{{request.POST.sqft}}</td>
       <td>$280</td>
@@ -59,7 +157,7 @@
 
     </tr>
     <tr>
-    <th scope="row">5</th>
+    <th scope="row">3</th>
     <td>HVAC / Mechanical / Cooling	</td>
     <td>{{request.POST.sqft}}</td>
     <td>$125</td>
@@ -69,7 +167,7 @@
 
   </tr>
   <tr>
-  <th scope="row">6</th>
+  <th scope="row">4</th>
   <td>Fire Suppression	</td>
   <td>{{request.POST.sqft}}</td>
   <td>$15</td>
@@ -79,7 +177,7 @@
 
 </tr>
 <tr>
-<th scope="row">7</th>
+<th scope="row">5</th>
 <td>Building Fit-Out</td>
 <td>{{request.POST.sqft}}</td>
 <td>$100</td>
@@ -89,7 +187,7 @@
 
 </tr>
 <tr>
-<th scope="row"></th>
+<th scope="row">6</th>
 <td>Total Development Costs	</td>
 <td>{{request.POST.sqft}}</td>
 <td>$600</td>

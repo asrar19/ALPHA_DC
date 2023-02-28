@@ -6,58 +6,177 @@
 {% block title %} Services {% endblock %}
 
 {% block content %}
-<linl rel="stylesheet" type="text/css" href="{% static 'css/services.css'%}""></linl>
+<link rel="stylesheet" type="text/css" href="{% static 'css/services.css'%}">
 <script type="text/javascript" src="{% static 'js/services.js'%}"></script>
 
+<section class="u-align-center u-clearfix u-palette-5-base u-section-1" id="carousel_d2df">
+   <h2 class="u-custom-font u-font-raleway u-text u-text-default u-text-1" style="color: #442c6c;">Company Services </h2>
+   <p class="u-custom-font u-font-courier-new u-text u-text-2">Here you can find all our services in ALPH DC , and more&nbsp;</p>
+   <div class="u-expanded-width  u-shape u-shape-rectangle u-shape-1 u-pa" style="background-color: #442c6c;"></div>
+   <div class="u-list u-list-1">
+     <div class="u-repeater u-repeater-1">
+       <div class="u-align-center u-container-style u-list-item u-radius-10 u-repeater-item u-shape-round u-white u-list-item-1">
+         <div class="u-container-layout u-similar-container u-container-layout-1">
+           <img alt="" class="u-expanded-width u-image u-image-contain u-image-default u-image-1" data-image-width="700" data-image-height="500" src="{% static 'images/11.png'%}">
+           <h4 class="u-text u-text-default u-text-3 " style="color: #442c6c;"  >Build / Design</h4>
+           <p class="u-text u-text-4">you can easily learn how to build your own data base , and what you will need and how much it will cost you .</p>
+         </div>
+       </div>
+       <div class="u-align-center u-container-style u-list-item u-radius-10 u-repeater-item u-shape-round u-white u-list-item-2">
+         <div class="u-container-layout u-similar-container u-container-layout-2">
+           <img alt="" class="u-expanded-width u-image u-image-contain u-image-default u-image-2" data-image-width="700" data-image-height="500" src="{% static 'images/2.png'%}">
+           <h4 class="u-text u-text-default  u-text-5" style="color: #442c6c;">Development</h4>
+           <p class="u-text u-text-6">if you looking to devolpe your own data base you can use our website to help you&nbsp;</p>
+         </div>
+       </div>
+     </div>
+   </div>
+ </section>
+ 
+<section class="u-align-center u-clearfix u-palette-5-base u-section-1" style="background-color: #442c6c; color: aliceblue;">
 
-<h1>Welcome to our services</h1>
-<h3>here you can learn how to build your data center </h3>
-<hr>
 
+
+
+
+
+
+   <form name="building_dc" id="building_dc" action="" method="POST">
+      {% csrf_token %}
+      <fieldset>
+         <h3>Please Answer the below quastion :</h3>
+   
+
+        <legend>How many nodes do you have?</legend>
+        <div>
+         <input type="radio" id="nodesChoice1" name="question1" value="0-30" />
+          <label for="contactChoice1">0-30</label>
+    
+          
+          <input type="radio" id="nodesChoice2" name="question1" value="30-60" />
+          <label for="contactChoice2">30-60</label>
+    
+          <input type="radio" id="nodesChoice3" name="question1" value="60-90" />
+          <label for="contactChoice3">60-90</label>
+
+          <input type="radio" id="nodesChoice4" name="question1" value="90-120" />
+          <label for="contactChoice4">90-120</label>
+
+        </div>
+
+        <legend>Which level of Data Center tier do you prefer ?</legend>
+        <div>
+         <input type="radio" id="tiersChoice1" name="question2" value="1" />
+          <label for="tiersChoice1">Tier I</label>
+    
+          
+          <input type="radio" id="tiersChoice2" name="question2" value="2"/>
+          <label for="tiersChoice2">Tier II</label>
+    
+          <input type="radio" id="tiersChoice3" name="question2" value="3" />
+          <label for="tiersChoice3">Tier IIII</label>
+
+          <input type="radio" id="tiersChoice4" name="question2" value="4" />
+          <label for="tiersChoice4">Tier IV</label>
+        </div>
+
+
+
+
+        <legend>what is the size of your facility ?</legend>
+        <div>
+         <input type="radio" id="sizeChoice1" name="question3" value="small" />
+          <label for="sizeChoice1">Small</label>
+    
+          
+          <input type="radio" id="sizeChoice2" name="question3" value="medium"/>
+          <label for="sizeChoice2">Medium</label>
+    
+          <input type="radio" id="sizeChoice3"name="question3" value="big" />
+          <label for="sizeChoice3">Large</label>
+
+      
+        </div>
+
+      <div class="u-container-layout">
+         <div>
+            <label>
+               <input id="h-input" type="number"  name="sqft" style="color: #442c6c;" placeholder="Enter Room area(sqft): ">
+            </label>   
+         </div>    
+      </div>
+
+
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+      </fieldset>
+    </form>
+    
+    <!--
+
+
+
+    <style>
+
+    div:first-of-type {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 5px;
+    }
+    
+    label {
+      margin-right: 15px;
+      line-height: 32px;
+    }
+    
+    input {
+      appearance: none;
+    
+      border-radius: 50%;
+      width: 16px;
+      height: 16px;
+    
+      border: 2px solid #999;
+      transition: 0.2s all linear;
+      margin-right: 5px;
+    
+      position: relative;
+      top: 4px;
+    }
+    
+    input:checked {
+      border: 6px solid #c5bada;
+    }
+    
+    button,
+    legend {
+      color: white;
+      background-color: #c5bada;
+      padding: 5px 10px;
+      border-radius: 0;
+      border: 0;
+      font-size: 14px;
+    }
+    
+    button:hover,
+    button:focus {
+      color: #999;
+    }
+    
+    button:active {
+      background-color: white;
+      color: black;
+      outline: 1px solid black;
+    }
+</style>
+
+
+    -->
 <div>
-<form name="building_dc" id="building_dc" action="" method="POST">
-   {% csrf_token %}
-   <div>
-      <p>Plaease answer the below question to have the data center result </p>
-      <p>How many nodes do you have?</p>
-      <p><input type="radio" name="question1" value="0-30">0-30</p>
-      <p><input type="radio" name="question1" value="30-60">30-60</p>
-      <p><input type="radio" name="question1" value="60-90">60-90</p>
-      <p><input type="radio" name="question1" value="90-120">90-120</p>
-   </div>
-
-   <div>
-      <p>Which level of Data Center tier do you prefer ?</p>
-      <p><input type="radio" name="question2" value="1">tier 1</p>
-      <p><input type="radio" name="question2" value="2">tier 2</p>
-      <p><input type="radio" name="question2" value="3">tier 3</p>
-      <p><input type="radio" name="question2" value="3">tier 4</p>
-   </div>
-
-   <div>
-      <p>what is the size of your facility ?</p>
-      <p><input type="radio" name="question3" value="small">small</p>
-      <p><input type="radio" name="question3" value="medium">medium</p>
-      <p><input type="radio" name="question3" value="big">big</p>
-   </div>
-
-   <div>
-      <div>
-         <label>
-            <input id="h-input" type="number"  name="sqft"  placeholder="Enter Room area(sqft): ">
-         </label>   
-      </div>    
-   </div>
-
-   <input type="submit" name="" value="submit">
-
-
-
-
-
-</form>
 
 </div>
+</section>
 
 
 {% endblock  %}

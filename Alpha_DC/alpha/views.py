@@ -26,10 +26,21 @@ def services(request : HttpRequest):
         nodes = request.POST["question1"]
         tier = request.POST["question2"]
         size = request.POST["question3"]
+        sqft = int(request.POST["sqft"])
  
 # main result 
         if nodes == "0-30" and tier == "1" and size == "small":
-            return render(request, "alpha/services/service_1.html")
+            buildingShelltotalLow = sqft * 80 
+            buildingShelltotalHigh = sqft * 160
+
+            electricalSystemltotalLow = sqft * 280
+            electricalSystemtotalHigh = sqft * 460
+
+            context = {
+                "totalLow" : buildingShelltotalLow + electricalSystemltotalLow,
+                "totalMax" : buildingShelltotalHigh + electricalSystemtotalHigh
+                }
+            return render(request, "alpha/services/service_1.html", context)
 
         elif nodes == "30-60" and tier == "2" and size == "medium":
             return render(request, "alpha/services/service_2.html")

@@ -21,20 +21,42 @@
         <h2 class="h3 mb-3 fw-normal">Register</h2>
 
     
-        <div class="form-outline mb-4">
-          <input name="username" id="form3Example3cg" type="text" class="form-control form-control-lg">
+        <div class="form-floating mt-2">
+          <input name="username"  type="text" class="form-control" id="floatingInput" placeholder="User Name">
             <label for="floatingInput">User Name</label>
           </div>
 
-          <div class="form-outline mb-4">
-            <input name="email" type="email" id="form3Example3cg" class="form-control form-control-lg" />
+          <div class="form-floating mt-2">
+            <input name="email" type="email" class="form-control" id="floatingInput" placeholder="Email"/>
             <label class="form-label" for="form3Example3cg">Your Email</label>
           </div>
           
+          <div class="form-floating mt-2">
+            <input name="first_name" type="text" class="form-control" id="floatingInput" placeholder="First Name">
+            <label for="floatingInput">First Name</label>
+        </div>
+
+
+        <div class="form-floating mt-2">
+            <input name="last_name" type="text" class="form-control" id="floatingInput" placeholder="username">
+            <label for="floatingInput">Last Name</label>
+        </div>
+
+        <div class="form-floating mt-2">
+            <input name="birth_date" type="date" class="form-control" id="floatingInput" placeholder="birth date">
+            <label for="floatingInput">Birth Date</label>
+        </div>
+
+        <div class="mt-2">
+            <label class="form-labelform-control" id="floatingInput" placeholder="Gender" >Gender</label>
+            <select name="gender" type="select" class="form-select">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+        </div>
 
           <div class="form-outline mb-4">
-            <input name="password" type="password" id="form3Example4cg" class="form-control form-control-lg" />
-            <label class="form-label" for="form3Example4cg">Password</label>
+            <input name="password" type="password" class="form-control" id="floatingInput" placeholder="Password" />
           </div>
 
           
@@ -46,11 +68,11 @@
           </div>
 
           <div class="d-flex justify-content-center">
-            <button type="submit" class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Register</button>
+            <button type="submit" class="btn btn-success btn-block btn-lg gradient-custom-4 text-body" style="background-color: #c499cf;">Register</button>
           </div>
 
           <p class="text-center text-muted mt-5 mb-0">Have already an account? <a href="{% url 'users:sign_in'%}"
-              class="fw-bold text-body"><u>sign in here</u></a></p>
+              class="fw-bold text-body"><u>Sign in Here</u></a></p>
       </form>
 
 </div>          
@@ -64,26 +86,3 @@
 
 {% endblock %}
 
-<style>
-.gradient-custom-3 {
-    /* fallback for old browsers */
-    background: #84fab0;
-    
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5));
-    
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5))
-    }
-    .gradient-custom-4 {
-    /* fallback for old browsers */
-    background: #84fab0;
-    
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1));
-    
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1))
-    }
-
-</style>
