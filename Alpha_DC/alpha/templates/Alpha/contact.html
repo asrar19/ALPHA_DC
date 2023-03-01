@@ -5,21 +5,138 @@
 {% block title %} Contact {% endblock %}
 
 {% block content %}
+<!--------------------------------------------------- FEEDBACK  ------------------------------------------------------>
 
 
-<div class="container-fluid align-items-center  ">
-  <section class="u-black u-clearfix u-section-1 align-items-center u-align-center" id="sec-af52">
+<section class="ftco-section" >
+  <div class="container">
+  <div class="row justify-content-center">
+  <div class="col-md-6 text-center mb-5">
+  <h2 class="heading-section  animate__animated animate__zoomIn" style="font-family:monospace; color: black; padding-top: 20px;">Contact Us !</h2>
+  </div>
+  </div>
+  <div class="row justify-content-center" style="border-width:3px; border-style:solid;">
+  <div class="col-lg-10 col-md-12">
+  <div class="wrapper">
+  <div class="row no-gutters">
+  <div class="col-md-7 d-flex align-items-stretch">
+  <div class="contact-wrap w-100 p-md-5 p-4">
+  <h3 class="mb-4"  style="color: black; font-family:monospace;">for more information please contact us </h3>
+  <div id="form-message-warning" class="mb-4"></div>
+
+  <form action="" method="POST" id="contactForm" name="contactForm" >
+    {% csrf_token %}
+
+  <div class="row">
+  <div class="col-md-6">
+  <div class="form-group">
+  <input type="text" class="form-control" name="user_name" id="user_name" placeholder="Name">
+  </div>
+  </div>
+  <div class="col-md-12">
+  <div class="form-group">
+  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+  </div>
+  </div>
+  <div class="col-md-12">
+  <div class="form-group">
+  <textarea name="user_comment" class="form-control" id="user_comment" cols="30" rows="7" placeholder="Message"></textarea>
+  </div>
+  </div>
+  <div class="col-md-12">
+  <div class="form-group">
+  <input type="submit" value="Send Message" class="btn btn-primary">
+  <div class="submitting"></div>
+  </div>
+  </div>
+  </div>
+  </form>
+  </div>
+  </div>
+
+
+
+
+
+
+  <div class="col-md-5 d-flex align-items-stretch" style="color: black;">
+  <div class="info-wrap w-100 p-lg-5 p-4" style="background-color: #d9b7da;">
+  <h3 class="mb-4 mt-md-4">Get in touch</h3>
+  <div class="dbox w-100 d-flex align-items-start" >
+  <div class="icon d-flex align-items-center justify-content-center">
+  <span class="fa fa-map-marker"></span>
+  </div>
+  <div class="text pl-3">
+  <p><span>Address:</span> Kingdom of saudi arabia , Riyadh </p>
+  </div>
+  </div>
+  <div class="dbox w-100 d-flex align-items-center">
+  <div class="icon d-flex align-items-center justify-content-center">
+  <span class="fa fa-phone"></span>
+  </div>
+  <div class="text pl-3" style="color: black;">
+  <p><span>Phone:</span> <a href="tel://1234567920">+966 552445555</a></p>
+  </div>
+  </div>
+  <div class="dbox w-100 d-flex align-items-center">
+  <div class="icon d-flex align-items-center justify-content-center">
+  <span class="fa fa-paper-plane"></span>
+  </div>
+  <div class="text pl-3">
+  <p><span>Email:</span> <a href="mailto:info@yoursite.com">info@asrarmail.com</a></p>
+  </div>
+  </div>
+  <div class="dbox w-100 d-flex align-items-center">
+  <div class="icon d-flex align-items-center justify-content-center">
+  <span class="fa fa-globe"></span>
+  </div>
+  <div class="text pl-3">
+  <p><span>Website</span> <a href="http://127.0.0.1:8000/">AlphaDC.com</a></p>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!---
+
+<div class="container-fluid align-items-center">
+  <section class="u-clearfix u-section-1 align-items-center u-align-center"  id="sec-af52">
+  
       <div class="u-clearfix u-sheet u-sheet-1 align-items-center u-align-center">
-        <p class="u-custom-font u-font-playfair-display u-text u-text-white u-title u-text-1 align-items-center" style="font-size:250%;">Add your feedback here&nbsp;</p>
+        <p class="u-custom-font u-font-playfair-display u-text u-text-white u-title u-text-1 align-items-center" style="font-size:250%;"> Contact Us </p>
       </br>
 
 
         <div class="u-container-style u-group u-group-1 align-items-center u-align-center u-container-align-center">
-          <section class="u-black u-clearfix u-section-1 u-align-center" id="sec-37b5">
+          <section class=" u-clearfix u-section-1 u-align-center" id="sec-37b5">
               <div class="u-clearfix u-sheet u-sheet-1">
         
-            <form action="" method="post"
-            class="contact-form col-md-10 col-lg-8 m-auto align-items-center u-align-center">
+            <form action="" method="post" class="contact-form col-md-10 col-lg-8 m-auto align-items-center u-align-center">
                 {% csrf_token %}
             
                 <div class="form-row">
@@ -32,25 +149,20 @@
                         <textarea name="user_comment" id="comment" rows="6" class="form-control"
                             placeholder="Write Your Comment..."></textarea>
                     </div>
+
                     <div class="form-group col-sm-12 mt-3">
             
                         <input type="submit" value="Send-Message" class="btn btn-outline-primary rounded">
             
                     </div>
+
                 </div>
             </form>
-        
-            
         </div>
       </div>
     </section>
 
-
-    
-    
-
-
-
+-->
 
 {% endblock  %}
 

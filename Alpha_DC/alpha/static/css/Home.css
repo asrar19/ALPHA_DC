@@ -363,7 +363,7 @@
     height: 371px;
   }
 } .u-section-2 {
-  background-image: url("images/dff.jpg");
+  background-image: url("/static/images/44d5d282-18f7-4295-9493-b2865af9bf3d.jpg");
   background-position: 50% 50%;
 }
 
@@ -749,7 +749,7 @@
 .u-section-4 .u-image-1 {
   width: 79px;
   height: 79px;
-  background-image: url("images/44d5d282-18f7-4295-9493-b2865af9bf3d.jpg");
+  background-image: url("/static/images/44d5d282-18f7-4295-9493-b2865af9bf3d.jpg");
   background-position: 50% 50%;
   margin: -69px 0 0 auto;
 }
@@ -794,7 +794,7 @@
 .u-section-4 .u-image-2 {
   width: 79px;
   height: 79px;
-  background-image: url("images/1222_150.jpg");
+  background-image: url("/static/images/1222_150.jpg");
   background-position: 50% 50%;
   margin: -69px 0 0 auto;
 }

@@ -1,4 +1,5 @@
 {% load static %}
+<!------------------------------------------------------HEADER------------------------------------------------------------------------>
 <!DOCTYPE html>
 <html lang="en">
    <head>
@@ -28,8 +29,9 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
       <link rel="stylesheet" href="{%static 'css/nicepage.css' %}" media="screen">
       <link rel="stylesheet" href="{%static 'css/Home.css' %}" media="screen">
-      <link rel="stylesheet" href="{%static 'css/about.css' %}" media="screen">
-      <link rel="stylesheet" href="{%static 'css/contact.css' %}" media="screen">
+<link rel="stylesheet" href="{%static 'css/about.css'%}" media="screen">
+       <link rel="stylesheet" href="{%static 'css/contact.css' %}" media="screen">
+      <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
       <script class="u-script" type="text/javascript" src="{%static 'js/jquery.js' %}" defer=""></script>
       <script class="u-script" type="text/javascript" src="{%static 'js/nicepage.js' %}" defer=""></script>
       <meta name="generator" content="Nicepage 5.5.0, nicepage.com">
@@ -61,8 +63,8 @@
 
 
    <header>
-      <!-- header inner -->
-      <div class="header">
+<!------------------------------------------------------ navbar ------------------------------------------------------------------------>
+<div class="header">
          <div class="container">
             <div class="row">
                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
@@ -123,7 +125,15 @@
    </header>
 
 
+
+   <!------------------------------------------------------(   CONTENT    )------------------------------------------------------------------------>
+
+
 {% block content %}
+
+
+<!------------------------------------------------------  HOME PAGE INFORMATION  ------------------------------------------------------------------------>
+
        <section class="u-clearfix u-custom-color-2 u-section-1" id="sec-c8b9">
          <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
            <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
@@ -131,7 +141,7 @@
                <div class="u-layout-row">
                  <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-1">
                    <div class="u-container-layout u-container-layout-1">
-                     <h1 class="u-align-left u-custom-font u-font-raleway u-text u-text-1" data-animation-name="pulse" data-animation-direction="" data-animation-duration="1000">ALPHA DC</h1>
+                     <h1 class="u-align-left u-custom-font u-font-raleway u-text u-text-1 animate__animated animate__bounce" >ALPHA DC</h1>
                      <h4 class="u-align-left u-custom-font u-font-courier-new u-text u-text-grey-30 u-text-2"> for Data Center&nbsp;</h4>
                      <div class="u-expanded-width-xs u-list u-list-1">
                        <div class="u-repeater u-repeater-1">
@@ -171,9 +181,12 @@
        </section>
 
 
-       <section class="u-clearfix u-image u-section-2" id="sec-f0a5" data-image-width="1980" data-image-height="1321">
-         <div class="u-clearfix u-sheet u-sheet-1">
-           <div class="u-clearfix  u-layout-wrap u-layout-wrap-1">
+       <!------------------------------------------------------ VISION ------------------------------------------------------------------------>
+
+
+       <section class="u-clearfix u-image u-section-2"  id="sec-f0a5" data-image-width="1980" data-image-height="1321">
+         <div class="u-clearfix u-sheet u-sheet-1" style="background-color: #848c9c;">
+           <div class="u-clearfix  u-layout-wrap u-layout-wrap-1" style="background-color: #848c9c;">
              <div class="u-layout">
                <div class="u-layout-row">
 
@@ -181,8 +194,8 @@
                    <div class="u-container-layout u-container-layout-2">
                      <div class="u-container-layout u-valign-middle u-container-layout-1">
                         <span class="u-file-icon u-icon u-icon-rectangle u-icon-1" data-animation-name="customAnimationIn" data-animation-duration="1750" data-animation-direction="" data-animation-delay="1500"><img src="{%static 'images/1464393.png'%}" alt=""></span>
-                     <h2 class="u-custom-font u-font-raleway u-text u-text-1">Alpha DC Vision</h2>
-                     <p class="u-text u-text-2"> Alpha DC is a startup company that is concerned with data centers and their development. It focuses on designing medium-sized data centers in the Kingdom of Saudi Arabia, and the most important thing that distinguishes it is its Saudi staff.</p>
+                     <h2 class="u-custom-font u-font-raleway u-text u-text-1" style="color: #442c6c;">Alpha DC Vision</h2>
+                     <p class="u-text" style="font-size:22px; font-family: monospace; color: #0c0c3c;" > Alpha DC is a startup company that is concerned with data centers and their development. It focuses on designing medium-sized data centers in the Kingdom of Saudi Arabia, and the most important thing that distinguishes it is its Saudi staff.</p>
                    </div>
                  </div>
                </div>
@@ -190,6 +203,10 @@
            </div>
          </div>
        </section>
+
+
+
+       <!-------------------------------------------------------- OUR DC CUSTOMERS ----------------------------------------------------->
        <section class="u-clearfix u-custom-color-2 u-section-3" id="carousel_efe0">
          <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
            <div class="u-gallery u-layout-grid u-lightbox u-no-transition u-show-text-on-hover u-gallery-1">
@@ -250,24 +267,40 @@
                </div>
              </div>
            </div>
+
+ 
            <div class="u-align-center u-container-style u-expanded-width-xs u-group u-radius-10 u-shape-round u-white u-group-1">
              <div class="u-container-layout u-container-layout-1">
-               <h2 class="u-custom-font u-font-raleway u-text   u-text-1">Our Data Centers</h2>
-               <p class="u-custom-font u-font-courier-new u-text u-text-2"> These are some of our data centers, our previous customers from all over the world, they could be our future customers too!!</p>             </div>
+               <h2  style="font-size:14; color: #442c6c;" >Our Data Centers</h2>
+               <p style="font-size:14; font-family: monospace; color: #0c0c3c;"> These are some of our data centers, our previous customers from all over the world, they could be our future customers too!!</p>             
+              </div>
            </div>
          </div>
+
+
+
+
        </section>
+
+
+
+
+       <!------------------------------------------------------ FEEDBACK ------------------------------------------------------------------------>
+
        <section class="u-align-center u-clearfix u-grey-5 u-section-4" id="carousel_e658">
          <div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-sheet-1">
-           <h2 class="u-custom-font u-font-raleway u-text u-text-default u-text-1">Feedback</h2>
-           <p class="u-custom-font u-font-courier-new u-text u-text-2"> Feedback from our valued customers</p>
+           <h2 style="font-size:22 ; font-family: monospace; color: #0c0c3c;">Evaluate some previous clients</h2>
            <div class="u-border-3 u-border-custom-color-4 u-line u-line-horizontal u-line-1"></div>
            <div class="u-layout-grid u-list u-list-1">
              <div class="u-repeater u-repeater-1">
                <div class="u-align-left u-container-style u-list-item u-radius-10 u-repeater-item u-shape-round u-white u-list-item-1">
                  <div class="u-container-layout u-similar-container u-container-layout-1">
                    <div class="u-container-style u-group u-shape-rectangle u-group-1">
-                     <div class="u-container-layout u-container-layout-2"><span class="u-file-icon u-icon u-text-palette-1-light-2 u-icon-1"><img src="{%static 'images/59149-207ff6b7.png'%}" alt=""></span>
+                     <div class="u-container-layout u-container-layout-2"><span class="u-file-icon u-icon u-text-palette-1-light-2 u-icon-1">
+                      <img src="{% static 'images/59149-207ff6b7.png'%}" alt=""></span>
+                     
+                  
+
                        <h5 class="u-align-left u-text u-text-3">Celia Almeda</h5>
                      </div>
                    </div>
@@ -278,11 +311,12 @@
                <div class="u-align-left u-container-style u-list-item u-radius-10 u-repeater-item u-shape-round u-white u-list-item-2">
                  <div class="u-container-layout u-similar-container u-container-layout-3">
                    <div class="u-container-style u-group u-shape-rectangle u-group-2">
-                     <div class="u-container-layout u-container-layout-4"><span class="u-file-icon u-icon u-text-palette-1-light-2 u-icon-2"><img src="{%static 'images/59149-207ff6b7.png'%}" alt=""></span>
+                     <div class="u-container-layout u-container-layout-4"><span class="u-file-icon u-icon u-text-palette-1-light-2 u-icon-2">
+                      <img src="{%static 'images/59149-207ff6b7.png'%}" alt=""></span>
                        <h5 class="u-align-left u-text u-text-5">Frank Kinney</h5>
                      </div>
                    </div>
-                   <div alt="" class="u-border-7 u-border-palette-1-base u-image u-image-circle u-image-2" data-image-width="126" data-image-height="126"></div>
+                   <div alt="" class="u-border-7 u-border-palette-1-base u-image u-image-circle u-image-2" src="{%static 'images/59149-207ff6b7.png'%}" data-image-width="126" data-image-height="126"></div>
                    <p class="u-text u-text-6">alpha dc are focusing on designing data center in the perfect way to build it&nbsp;</p>
                  </div>
                </div>
@@ -305,6 +339,7 @@
 
 
 
+<!------------------------------------------------------ FOOTER ------------------------------------------------------------------------>
 
 
        <footer class="u-clearfix u-custom-color-1 u-footer" id="sec-23ca"><div class="u-clearfix u-sheet u-sheet-1">
@@ -342,7 +377,8 @@
        
        
        
-       
+       <!------------------------------------------------------ COOKIES ------------------------------------------------------------------------>
+
        
        <section class="u-align-center u-clearfix u-cookies-consent u-palette-5-dark-1 u-cookies-consent" id="sec-d71f">
          <div class="u-clearfix u-sheet u-sheet-1">
@@ -374,7 +410,10 @@
 
 
 
-       <style> .u-cookies-consent {
+       <style> 
+       
+       
+       .u-cookies-consent {
      background-image: none;
    }
    

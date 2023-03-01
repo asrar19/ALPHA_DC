@@ -1,5 +1,8 @@
 from django import template
 
+
+
+#################################   TO USE MATHAMATICS OPRETINS IN VIEWS   ###############################
 register = template.Library()
 
 @register.filter('multiply')
