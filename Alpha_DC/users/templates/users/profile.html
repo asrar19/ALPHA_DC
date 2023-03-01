@@ -5,21 +5,40 @@
 
 {% block content %}
 
+<div class="header pb-8 pt-5 pt-lg-8 d-flex align-items-center" style="min-height: 600px; background-image: url(https://obscuritylabs.com/wp-content/uploads/2019/05/footer-bg-purple.jpg); background-size: cover; background-position: center top;">
+    <!-- Mask -->
+    <span class="mask bg-gradient-default opacity-8"></span>
+    <!-- Header container -->
+    <div class="container-fluid d-flex align-items-center">
+      <div class="row">
+        <div class="">
+            <h1 class="animate__animated animate__bounce align-items-center" style="size: 50px; color: #ffffff; font-family:'Times New Roman '">Hello {{ request.user.first_name  }} {{ request.user.last_name }} </h1>
+          <p style="color: #ffffff ; margin:40 px ; size: 40px;">This is your profile page you can see all your personal information </p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-<section style="background-color:dimgray;">
-<div class="container" style="background-color:dimgray; color: aliceblue; font-family:'Times New Roman '">
-    <h1 style=" color: rgb(230, 184, 236); font-family:'Times New Roman '"> Welcome {{ request.user.first_name  }} {{ request.user.last_name }}</h1>
-    <h2 style=" color: rgb(230, 184, 236); font-family:'Times New Roman '">User Info</h2>
-    <h5 >User Name: {{ request.user.username }}</h5>
-    <h5 >Email: {{ request.user.email }}</h5>
-    <h5 >Birth date:{{ request.user.profile.birth_date }}</h5>
-    <h5>Gender: {{ request.user.profile.gender }}</h5>
-    <h5>Company:{{ request.user.profile.company }}</h5>
-    <h5>Job Title : {{ request.user.profile.job }}</h5>
-    <h5>Creation Date : {{ request.user.profile.creation_date }}</h5>
+      
+<section style="background-color:rgb(255, 255, 255); ">
+<div class="container " style="  margin: auto ;padding-top: 40px ; padding-bottom: 40px ;background-color:#ffffff; color: #5730a0; font-family:'Times New Roman '">    
+<div class="w3-container " style="border: 2px solid #5730a0; border-radius: 5px; border-width: 8px;"  >
+    <div style=" margin:30px ;">
+        <h2 style=" color: #5730a0; font-family:Times New Roman">User Info</h2>
+        <h5 >User Name:     {{ request.user.username }}</h5>
+        <h5 >Email:     {{ request.user.email }}</h5>
+        <h5 >Birth date:   {{ request.user.profile.birth_date }}</h5>
+        <h5>Gender:    {{ request.user.profile.gender }}</h5>
+        <h5>Company:   {{ request.user.profile.company }}</h5>
+        <h5>Job Title: {{ request.user.profile.job }}</h5>
+        <h5>Creation Date :  {{ request.user.profile.creation_date }}</h5>
+    </div>
+</div>
 
     <style>
-        h5 {color: aliceblue; 
+
+        
+        h5 {color: #744c9c; 
         font-family:'Times New Roman';
     }
     </style>

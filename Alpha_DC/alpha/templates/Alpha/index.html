@@ -76,7 +76,7 @@
                      </div>
                   </div>
                </div>
-               <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+               <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9" class="{{ request.COOKIES.mode }}"  >
                   <nav class="navigation navbar navbar-expand-md navbar-dark ">
                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
                      <span class="navbar-toggler-icon"></span>
@@ -141,7 +141,7 @@
                <div class="u-layout-row">
                  <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-1">
                    <div class="u-container-layout u-container-layout-1">
-                     <h1 class="u-align-left u-custom-font u-font-raleway u-text u-text-1 animate__animated animate__bounce" >ALPHA DC</h1>
+                     <h1 class="u-align-left u-custom-font u-font-raleway u-text u-text-1 animate__animated animate__bounce"  style="padding-left: 3px;">ALPHA DC</h1>
                      <h4 class="u-align-left u-custom-font u-font-courier-new u-text u-text-grey-30 u-text-2"> for Data Center&nbsp;</h4>
                      <div class="u-expanded-width-xs u-list u-list-1">
                        <div class="u-repeater u-repeater-1">
@@ -194,7 +194,7 @@
                    <div class="u-container-layout u-container-layout-2">
                      <div class="u-container-layout u-valign-middle u-container-layout-1">
                         <span class="u-file-icon u-icon u-icon-rectangle u-icon-1" data-animation-name="customAnimationIn" data-animation-duration="1750" data-animation-direction="" data-animation-delay="1500"><img src="{%static 'images/1464393.png'%}" alt=""></span>
-                     <h2 class="u-custom-font u-font-raleway u-text u-text-1" style="color: #442c6c;">Alpha DC Vision</h2>
+                     <h2 class="u-custom-font u-font-raleway u-text u-text-1" style="color: #442c6c; ">Alpha DC Vision</h2>
                      <p class="u-text" style="font-size:22px; font-family: monospace; color: #0c0c3c;" > Alpha DC is a startup company that is concerned with data centers and their development. It focuses on designing medium-sized data centers in the Kingdom of Saudi Arabia, and the most important thing that distinguishes it is its Saudi staff.</p>
                    </div>
                  </div>
@@ -287,7 +287,7 @@
 
        <!------------------------------------------------------ FEEDBACK ------------------------------------------------------------------------>
 
-       <section class="u-align-center u-clearfix u-grey-5 u-section-4" id="carousel_e658">
+       <section class="u-align-center u-clearfix u-grey-5 u-section-4" id="carousel_e658" style="padding-top: 3px;">
          <div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-sheet-1">
            <h2 style="font-size:22 ; font-family: monospace; color: #0c0c3c;">Evaluate some previous clients</h2>
            <div class="u-border-3 u-border-custom-color-4 u-line u-line-horizontal u-line-1"></div>
@@ -379,27 +379,29 @@
        
        <!------------------------------------------------------ COOKIES ------------------------------------------------------------------------>
 
-       
-       <section class="u-align-center u-clearfix u-cookies-consent u-palette-5-dark-1 u-cookies-consent" id="sec-d71f">
+      {% if not request.COOKIES.consent %}
+
+       <section class="u-align-center u-clearfix u-cookies-consent u-cookies-consent" style="background-color: #c9c1d6; border-style: dotted;" id="sec-d71f">
          <div class="u-clearfix u-sheet u-sheet-1">
            <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
              <div class="u-gutter-0 u-layout">
                <div class="u-layout-row">
                  <div class="u-container-style u-layout-cell u-left-cell u-size-43-md u-size-43-sm u-size-43-xs u-size-46-lg u-size-46-xl u-layout-cell-1">
                    <div class="u-container-layout u-valign-middle u-container-layout-1">
-                     <h3 class="u-text u-text-default u-text-1">Cookies &amp; Privacy</h3>
-                     <p class="u-text u-text-default u-text-2">This website uses cookies to ensure you get the best experience on our website.</p>
+                     <h3 class="u-text u-text-default u-text-1" style="color: black; font-family: 'Times New Roman';">Cookies &amp; Privacy</h3>
+                     <p class="u-text u-text-default u-text-2" style="color: black; font-family: 'Times New Roman';">This website uses cookies to ensure you get the best experience on our website.</p>
                    </div>
                  </div>
                  <div class="u-align-left u-container-style u-layout-cell u-right-cell u-size-14-lg u-size-14-xl u-size-17-md u-size-17-sm u-size-17-xs u-layout-cell-2">
                    <div class="u-container-layout u-valign-middle-lg u-valign-middle-md u-valign-middle-xl u-valign-top-sm u-valign-top-xs u-container-layout-2">
-                     <a href="###" class="u-btn u-button-confirm u-button-style u-palette-1-base u-btn-1">Confirm</a>
+                     <a href="{% static 'alpha:index' %}" class=" u-button-confirm u-palette-1-base btn btn-info" >CONFIRM</a>
                    </div>
                  </div>
                </div>
              </div>
            </div>
          </div>
+         {% endif %}
 
 
 

@@ -43,7 +43,7 @@
 
 .u-section-1 .u-image-1 {
   min-height: 715px;
-  background-image: url("images/Facility-Resource-Utilization-scaled.jpg");
+  background-image: url("/static/images/screen.png") ;
 
   background-position: 50% 50%;
 }

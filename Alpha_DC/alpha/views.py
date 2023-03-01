@@ -9,7 +9,18 @@ from .models import Comment
 ############# THE INDEX PAGE ################
 
 def index(request : HttpRequest):
+    cookies = request.COOKIES
     return render(request, "alpha/index.html")
+
+
+
+
+def consent_to_TOS(request : HttpRequest):
+    response = redirect("alpha:index")
+    response.set_cookie("consent", "Yes", max_age=60*60*24*7)
+
+    return response
+
 
 
 

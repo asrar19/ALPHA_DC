@@ -29,8 +29,8 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
       <link rel="stylesheet" href="{%static 'css/nicepage.css' %}" media="screen">
       <link rel="stylesheet" href="{%static 'css/Home.css' %}" media="screen">
-      <link rel="stylesheet" href="{%static 'css/about.css' %}" media="screen">
-      <link rel="stylesheet" href="{%static 'css/contact.css' %}" media="screen">
+<link rel="stylesheet" href="{%static 'css/about.css'%}" media="screen">
+       <link rel="stylesheet" href="{%static 'css/contact.css' %}" media="screen">
       <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
       <script class="u-script" type="text/javascript" src="{%static 'js/jquery.js' %}" defer=""></script>
       <script class="u-script" type="text/javascript" src="{%static 'js/nicepage.js' %}" defer=""></script>
@@ -76,7 +76,7 @@
                      </div>
                   </div>
                </div>
-               <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+               <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9" class="{{ request.COOKIES.mode }}"  >
                   <nav class="navigation navbar navbar-expand-md navbar-dark ">
                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
                      <span class="navbar-toggler-icon"></span>
@@ -287,7 +287,7 @@
 
        <!------------------------------------------------------ FEEDBACK ------------------------------------------------------------------------>
 
-       <section class="u-align-center u-clearfix u-grey-5 u-section-4" id="carousel_e658">
+       <section class="u-align-center u-clearfix u-grey-5 u-section-4" id="carousel_e658" style="padding-top: 3px;">
          <div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-sheet-1">
            <h2 style="font-size:22 ; font-family: monospace; color: #0c0c3c;">Evaluate some previous clients</h2>
            <div class="u-border-3 u-border-custom-color-4 u-line u-line-horizontal u-line-1"></div>
@@ -379,9 +379,10 @@
        
        <!------------------------------------------------------ COOKIES ------------------------------------------------------------------------>
 
-       
-       <section class="u-align-center u-clearfix u-cookies-consent u-palette-5-dark-1 u-cookies-consent" id="sec-d71f">
-         <div class="u-clearfix u-sheet u-sheet-1">
+      {% if not request.COOKIES.consent %}
+
+       <section class="u-align-center u-clearfix u-cookies-consent u-cookies-consent"  style="background-color: #442c6c;" id="sec-d71f">
+         <div class="u-clearfix u-sheet u-sheet-1" style="background-color: #442c6c;">
            <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
              <div class="u-gutter-0 u-layout">
                <div class="u-layout-row">
@@ -393,13 +394,14 @@
                  </div>
                  <div class="u-align-left u-container-style u-layout-cell u-right-cell u-size-14-lg u-size-14-xl u-size-17-md u-size-17-sm u-size-17-xs u-layout-cell-2">
                    <div class="u-container-layout u-valign-middle-lg u-valign-middle-md u-valign-middle-xl u-valign-top-sm u-valign-top-xs u-container-layout-2">
-                     <a href="###" class="u-btn u-button-confirm u-button-style u-palette-1-base u-btn-1">Confirm</a>
+                     <a href="{% static 'alpha:index' %}" class="u-btn u-button-confirm u-button-style u-palette-1-base u-btn-1">Confirm</a>
                    </div>
                  </div>
                </div>
              </div>
            </div>
          </div>
+         {% endif %}
 
 
 

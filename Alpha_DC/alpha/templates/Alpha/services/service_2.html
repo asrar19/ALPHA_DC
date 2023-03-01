@@ -4,7 +4,7 @@
 {% load mul %}
 
 
-{% block title %} Services {% endblock %}
+{% block title %} Service 2  {% endblock %}
 
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -17,29 +17,30 @@
 
  
 <section class="u-clearfix u-grey-10 u-section-1" id="carousel_e67a">
+  <img style="float: right;padding-right: 90px; padding-top: 50px;  " src="{% static 'images/33809698_81137890471.png'%}" alt="" width="400" height="400" >
   <div class="u-clearfix u-sheet u-sheet-1">
     <div class="u-align-center u-container-style u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-group u-shape-rectangle u-group-1">
       <div class="u-container-layout">
-        <h6 class="u-align-left u-custom-font u-font-montserrat u-text u-text-default u-text-1">This is service 2 .&nbsp;</h6>
+        <h6 class=" animate__animated animate__bounce u-align-left u-custom-font u-font-montserrat u-text u-text-default u-text-1" style="padding-left: 20px;">This is service 2 .&nbsp;</h6>
         <h5 class="u-align-left u-custom-font u-font-montserrat u-text u-text-custom-color-1 u-text-2"> Here you can find everything you will need in this service , depending on your answers for the pervious questions .&nbsp;</h5>
       </div>
     </div>
-    <img class="u-image u-image-contain u-image-default u-image-1" src="{% static 'images/33809698_81137890471.png'%}" alt="" data-image-width="500" data-image-height="500">
   </div>
 </section>
+
+
 
 
 <!-- Choices  ------------------------------------------------------------------------------>
 
 <section class="u-clearfix u-custom-color-2 u-section-2" id="sec-af16">
-  <div class="u-clearfix u-sheet u-sheet-1">
-    <h3  class="u-align-center" style="size: 30px; font-family: 'Times New Roman';">Your Choices are :</h3>
-    <div class="u-border-3 u-border-custom-color-5 u-line u-line-horizontal u-line-1"></div>
-    <ul class=" u-font-courier-new u-text u-text-2" style="font-family: 'Times New Roman'; size: 27px;">
-      <li>nodes : 30-60</li>
-      <li>tier level: Tier II</li>
-      <li>facility size: Medium</li>
-      <li>room area (SQFT):{{request.POST.sqft}} </li>
+  <h3 class="u-align-center animate__animated animate__lightSpeedInRigh " style="size: 27px; font-family: 'Times New Roman';">Your Choices are :</h3>
+  <div class="u-border-3 u-border-custom-color-5 u-line u-line-horizontal u-line-1"></div>
+  <ul class=" u-font-courier-new u-text u-text-2 " style="font-family: 'Times New Roman'; size: 25px; ">
+      <li>- Nodes : 30-60</li>
+      <li>- Tier level: Tier II</li>
+      <li>- Facility size: Medium</li>
+      <li>- Room area (SQFT):{{request.POST.sqft}} </li>
     </ul>
   </div>
 </section>
@@ -50,24 +51,23 @@
 
 <section>
   <div>
-    <h3>Tier II</h3>
-    <p>
+    <h3 class="" style="color: #34345a; padding-left: 20px; ">Tier II</h3>
+    <p style="color: black; padding-left: 20px; font-style: normal;">
       Tier II facilities cover redundant capacity components for power and cooling that provide better 
-      maintenance opportunities and safety against disruptions. These components include:
-       <ul>
-        <li>Engine generators.</li>
-        <li> Energy storage.</li>
-        <li>Chillers</li>
-        <li> Cooling units.</li>
-        <li>UPS modules.</li>
-        <li>Pumps</li>
-        <li>Heat rejection equipment.</li>
-        <li>Fuel tanks.</li>
-        <li>Fuel cells.</li>
-
-
-
+      maintenance opportunities and safety against disruptions, These components include:
+    </p>
+       <ul style="padding-left: 27px; color: black; font-style: italic;">
+        <li>- Engine generators.</li>
+        <li>- Energy storage.</li>
+        <li>- Chillers.</li>
+        <li>- Cooling units.</li>
+        <li>- UPS modules.</li>
+        <li>- Pumps.</li>
+        <li>- Heat rejection equipment.</li>
+        <li>- Fuel tanks.</li>
+        <li>- Fuel cells.</li>
        </ul>
+       <p style="color: black; padding-left: 20px; font-style: normal;">
        The distribution path of Tier II serves a critical environment, and the components can be removed without shutting it down. Like a Tier I facility, unexpected shutdown of a 
        Tier II data center will affect the system.
     </p>
@@ -79,68 +79,63 @@
 
 
 <!-- Features Table ------------------------------------------------------------------------------>
-<section class="u-align-center u-clearfix u-custom-color-1 u-section-3" id="sec-1750">
+<section class="u-align-center u-clearfix u-custom-color-1 u-section-3" id="sec-1750" style="padding-top: 35px;padding-bottom: 35px;">
   <div class="u-clearfix u-sheet u-sheet-1">
-    <h2 class="u-text u-text-default u-text-1"> Tier II Features</h2>
+    <h3 class="u-align-center animate__animated animate__lightSpeedInRigh " style="size: 27px; font-family: 'Times New Roman';">Tier II Features</h3>
     <div class="u-table u-table-responsive u-table-1">
-      <table class="u-table-entity u-table-entity-1">
-        <colgroup>
-          <col width="33.3%">
-          <col width="35.4%">
-          <col width="31.3%">
-        </colgroup>
-        <thead class="u-align-center u-custom-color-2 u-table-header u-table-header-1">
+      <table class="u-table-entity u-table-entity-1" style=" font-family:Arial, Helvetica, sans-serif;size: 20px; width: auto; height: auto; margin: auto; border-color: antiquewhite ;border-style: double;"  >
+        <thead class="u-align-center u-table-header u-table-header-1 " style="border-color: antiquewhite ;border-style: double;">
           <tr style="height: 46px;">
-            <th class="u-border-2 u-border-black u-table-cell">#</th>
-            <th class="u-border-2 u-border-black u-table-cell">Features </th>
-            <th class="u-border-2 u-border-black u-table-cell"> Tier I</th>
+            <th >#</th>
+            <th >Features </th>
+            <th >Tier II</th>
           </tr>
         </thead>
-        <tbody class="u-align-center u-palette-5-light-2 u-table-body u-table-body-1">
+        <tbody class="u-align-center u-table-body u-table-body-1" style="border-color: antiquewhite ;border-style: double;">
           <tr style="height: 62px;">
-            <td class="u-border-1 u-border-black u-table-cell u-table-cell-4">1</td>
-            <td class="u-border-1 u-border-black u-table-cell u-table-cell-5">Uptime guarantee</td>
-            <td class="u-border-1 u-border-black u-table-cell u-table-cell-6">99.741%			</td>
+            <td>1</td>
+            <td>Uptime guarantee</td>
+            <td >99.741%</td>
           </tr>
           <tr style="height: 68px;">
-            <td class="u-border-1 u-border-black u-table-cell u-table-cell-7">2</td>
-            <td class="u-border-1 u-border-black u-table-cell u-table-cell-8">Downtime per year	</td>
-            <td class="u-border-1 u-border-black u-table-cell u-table-cell-9">more than 22 hours</td>
+            <td>2</td>
+            <td>Downtime per year	</td>
+            <td>more than 22 hours</td>
           </tr>
           <tr style="height: 68px;">
-            <td class="u-border-1 u-border-black u-table-cell u-table-cell-10">3</td>
-            <td class="u-border-1 u-border-black u-table-cell u-table-cell-11">Component redundancy	</td>
-            <td class="u-border-1 u-border-black u-table-cell u-table-cell-12"> Partial power and cooling redundancy (partial N+1) </td>
+            <td >3</td>
+            <td >Component redundancy	</td>
+            <td> Partial power and cooling redundancy (partial N+1) </td>
           </tr>
           <tr style="height: 68px;">
-            <td class="u-border-1 u-border-black u-table-cell u-table-cell-13">4</td>
-            <td class="u-border-1 u-border-black u-table-cell u-table-cell-14">Concurrently maintainable</td>
-            <td class="u-border-1 u-border-black u-table-cell u-table-cell-15">no</td>
+            <td >4</td>
+            <td >Concurrently maintainable</td>
+            <td >no</td>
           </tr>
           <tr style="height: 68px;">
-            <td class="u-border-1 u-border-black u-table-cell u-table-cell-16">5</td>
-            <td class="u-border-1 u-border-black u-table-cell u-table-cell-17">Price</td>
-            <td class="u-border-1 u-border-black u-table-cell u-table-cell-18">$$</td>
+            <td >5</td>
+            <td >Price</td>
+            <td >$$</td>
           </tr>
           <tr style="height: 68px;">
-            <td class="u-border-1 u-border-black u-table-cell u-table-cell-19">6</td>
-            <td class="u-border-1 u-border-black u-table-cell u-table-cell-20">Compartmentalization</td>
-            <td class="u-border-1 u-border-black u-table-cell u-table-cell-21">no</td>
+            <td >6</td>
+            <td >Compartmentalization</td>
+            <td >no</td>
           </tr>
           <tr style="height: 68px;">
-            <td class="u-border-1 u-border-black u-table-cell u-table-cell-22">7</td>
-            <td class="u-border-1 u-border-black u-table-cell u-table-cell-23">Staffing</td>
-            <td class="u-border-1 u-border-black u-table-cell u-table-cell-24">1 shift</td>
+            <td >7</td>
+            <td >Staffing</td>
+            <td >1 shift</td>
           </tr>
           <tr style="height: 68px;">
-            <td class="u-border-1 u-border-black u-table-cell u-table-cell-25">8</td>
-            <td class="u-border-1 u-border-black u-table-cell u-table-cell-26">Typical customer</td>
-            <td class="u-border-1 u-border-black u-table-cell u-table-cell-27">SMBs</td>
+            <td >8</td>
+            <td>Typical customer</td>
+            <td >SMBs</td>
           </tr>
           <tr style="height: 68px;">
-            <td class="u-border-1 u-border-black u-table-cell u-table-cell-28">9</td>
-            <td class="u-border-1 u-border-black u-table-cell u-table-cell-29">The main reason why companies select this tier</td>
-            <td class="u-border-1 u-border-black u-table-cell u-table-cell-30">A good cost-to-performance ratio</td>
+            <td >9</td>
+            <td >The main reason why companies select this tier</td>
+            <td >A good cost-to-performance ratio</td>
           </tr>
         </tbody>
       </table>
@@ -151,13 +146,12 @@
 
 <!-----------------COSTING-------------------------------------------------------------------------->
 
-
-
-
-
-
-<table class="table">
-    <thead>
+<section class="u-align-center u-clearfix u-custom-color-1 u-section-4" id="sec-1750" style="padding-top: 35px;padding-bottom: 35px; background-color: #ebf3ed;">
+  <div class="u-clearfix u-sheet u-sheet-1">
+    <h3 class="u-align-center animate__animated animate__lightSpeedInRigh " style="size: 27px; font-family: 'Times New Roman'; color: #34345a;">Tier III Cost</h3>
+    <div class="u-table u-table-responsive u-table-1">
+      <table class="u-table-entity u-table-entity-1" style=" font-family:Arial, Helvetica, sans-serif;size: 20px; width: auto; height: auto; margin: auto; border-color: antiquewhite ;border-style: double;"  >
+        <thead class="u-align-center u-table-header u-table-header-1 " style="border-color: antiquewhite ;border-style: double;">
       <tr>
         <th scope="col">#</th>
         <th scope="col">Cost Component</th>
@@ -223,15 +217,15 @@
 
 </tr>
 <tr>
-<th scope="row">6</th>
-<td style="color: white; font-style: oblique;">Total Development Costs	</td>
-<td>{{request.POST.sqft}}</td>
-<td>$600</td>
-<td>$1,060</td>
-<td>${{totalLow}}</td>
-<td>${{totalMax}}</td>
-
-</tr>
+  <th scope="row">6</th>
+  <td style="color: white; font-style: oblique; font-weight: bold;">Total Development Costs	</td>
+  <td>{{request.POST.sqft}}</td>
+  <td>$600</td>
+  <td>$1,060</td>
+  <td>${{totalLow}}</td>
+  <td>${{totalMax}}</td>
+  
+  </tr>
 
     </tbody>
   </table>

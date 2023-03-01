@@ -13,61 +13,78 @@
 <script src="{% static 'js/services.js'%}"></script>
 
 <section class="u-align-center u-clearfix u-palette-5-base u-section-1" id="carousel_d2df">
-   <h2 class="u-custom-font u-font-raleway u-text u-text-default u-text-1" style="color: #442c6c;">Company Services </h2>
+   <h2 class="u-custom-font u-font-raleway u-text u-text-default u-text-1 animate__animated animate__bounce" style="color: #442c6c;">Company Services </h2>
    <p class="u-custom-font u-font-courier-new u-text u-text-2">Here you can find all our services in ALPH DC , and more</p>
    <div class="u-expanded-width  u-shape u-shape-rectangle u-shape-1 u-pa" style="background-color: #442c6c;"></div>
    <div class="u-list u-list-1">
      <div class="u-repeater u-repeater-1">
 
 
-       <div class="u-align-center u-container-style u-list-item u-radius-10 u-repeater-item u-shape-round u-white u-list-item-1">
-         <div class="u-container-layout u-similar-container u-container-layout-1">
-           <img alt="" class="u-expanded-width u-image u-image-contain u-image-default u-image-1" data-image-width="700" data-image-height="500" src="{% static 'images/11.png'%}">
-           <h4 class="u-text u-text-default u-text-palette-1-base u-text-3" style="color: #442c6c;"  >Build / Design</h4>
-           <p class="u-text u-text-4">you can easily learn how to build your own data base , and what you will need and how much it will cost you .</p>
-         </div>
-       </div>
+
+      
 
        
        <div class="u-align-center u-container-style u-list-item u-radius-10 u-repeater-item u-shape-round u-white u-list-item-2">
          <div class="u-container-layout u-similar-container u-container-layout-2">
+          <h4 class="u-text u-text-default u-text-palette-1-base u-text-5" style="color: #442c6c;">Development</h4>
            <img alt="" class="u-expanded-width u-image u-image-contain u-image-default u-image-2" data-image-width="700" data-image-height="500" src="{% static 'images/2.png'%}">
-           <h4 class="u-text u-text-default u-text-palette-1-base u-text-5" style="color: #442c6c;">Development</h4>
            <p class="u-text u-text-6">if you looking to devolpe your own data base you can use our website to help you</p>
          </div>
        </div>
+
+       <div class="u-align-center u-container-style u-list-item u-radius-10 u-repeater-item u-shape-round u-white u-list-item-2">
+        <div class="u-container-layout u-similar-container u-container-layout-2">
+         <h4 class="u-text u-text-default u-text-palette-1-base u-text-5" style="color: #442c6c;">Build / Design</h4>
+          <img alt="" class="u-expanded-width u-image u-image-contain u-image-default u-image-2" data-image-width="700" data-image-height="500" src="{% static 'images/11.png'%}">
+          <p class="u-text u-text-6">you can easily learn how to build your own data base , and what you will need and how much it will cost you .</p>
+        </div>
+      </div>
+
+
      </div>
    </div>
+
+
+
+
  </section>
  
-<section class="u-align-center u-clearfix u-palette-5-base u-section-1" style="background-color: #442c6c; color: aliceblue;">
-
-
-
+<section  class=" u-align-center u-clearfix u-palette-5-base u-section-1" style="padding-top: 30px; border-style:rounded ;background-color: #442c6c; color: aliceblue;">
 
 
 <!--------------------------------------------------- SERVICE FORM  ------------------------------------------------------>
 
-<div>
-  <h3 style="padding-top: 3px; font-family:'Times New Roman'; color: #9e94ae; "> Please answer the quastions :</h3>
+<div  class="container"  style="border-style: double">
+  <h3 style="padding-top: 3px; font-family:'Times New Roman'; color: #9e94ae; "> Please answer the quastions to get you Data center cost,and information :</h3>
   <form name="building_dc" id="building_dc" action="" method="POST">
       {% csrf_token %}
-      <fieldset>   
-        <legend style="font-family:monospace;">How many nodes do you have?</legend>
-        <div>
+
+
+      <div >   
+        <style>
+          legend{
+            font-family:sans-serif ;
+            font-size: 23px;
+            padding-top: 9px
+            
+
+          }
+        </style>
+        
+        <legend>How many nodes do you have?</legend>
+        <div style="font-size: 18px; font-family: monospace; ">
          <input type="radio" id="nodesChoice1" name="question1" value="0-30" />
           <label for="contactChoice1">0-30</label>
-    
-          
           <input type="radio" id="nodesChoice2" name="question1" value="30-60" />
           <label for="contactChoice2">30-60</label>
-    
           <input type="radio" id="nodesChoice3" name="question1" value="60-90" />
           <label for="contactChoice3">60-90</label>
           <input type="radio" id="nodesChoice4" name="question1" value="90-120" />
           <label for="contactChoice4">90-120</label>
         </div>
-        <legend style="font-family:monospace;">Which level of Data Center tier do you prefer ?</legend>
+
+
+        <legend style="font-family:sans-serif ; size: 23px; padding-top: 9px;">Which level of Data Center tier do you prefer ?</legend>
         <div>
          <input type="radio" id="tiersChoice1" name="question2" value="1" />
           <label for="tiersChoice1">Tier I</label>
@@ -81,7 +98,7 @@
           <input type="radio" id="tiersChoice4" name="question2" value="4" />
           <label for="tiersChoice4">Tier IV</label>
         </div>
-        <legend style="font-family:monospace;">what is the size of your facility ?</legend>
+        <legend  >what is the size of your facility ?</legend>
         <div>
          <input type="radio" id="sizeChoice1" name="question3" value="small" />
           <label for="sizeChoice1">Small</label>
@@ -104,7 +121,7 @@
         <div>
           <button type="submit" class="btn btn-primary">Submit</button>
         </div>
-      </fieldset>
+      </div>
     </form>
   </div>
   
@@ -113,4 +130,96 @@
 </section>
 
 
+
+
+
+
+
+
+
+
+
+<style>
+
+
+input,
+label {
+    cursor: pointer;
+}
+
+label,
+small {
+    margin-top: 0.1em;
+}
+
+input[type="radio"] {
+    height: 1.2rem;
+    width: 1.2rem;
+    margin-right: 0.5rem;
+}
+
+#accent {
+    accent-color: var(--checked-color);
+}
+
+.custom-radio {
+    /* hiding browser el */
+    appearance: none;
+    /* Safari support */
+    -webkit-appearance: none;
+    border: 0.2rem solid #fff;
+    background-color: var(--bg-color);
+    border-radius: 50%;
+}
+
+/* keyboard navigation focus appearance */
+.custom-radio:focus-visible {
+    outline-offset: 0;
+}
+
+#box-shadow {
+    box-shadow: 0 0 0 1px var(--color);
+}
+
+#box-shadow:hover {
+    border-width: 0;
+}
+
+#box-shadow:checked {
+    box-shadow: 0 0 0 1px var(--checked-color);
+    background-color: var(--checked-color);
+    border-width: 0.2rem;
+}
+
+#outline {
+    outline: 1px solid var(--color);
+}
+
+#outline:hover {
+    outline-color: var(--checked-color);
+}
+
+#outline:checked {
+    outline-color: var(--checked-color);
+    background-color: var(--checked-color);
+
+    animation: outline-checked;
+    animation-duration: 0.1s;
+    animation-iteration-count: 4;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes outline-checked {
+    0% {
+        outline-offset: 0;
+    }
+
+    100% {
+        outline-offset: -0.2rem;
+    }
+}
+
+  
+</style>
 {% endblock  %}
