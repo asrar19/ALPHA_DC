@@ -86,7 +86,7 @@ def services(request : HttpRequest):
                 "totalMax" : buildingShelltotalHigh + electricalSystemtotalHigh + HVACtotalHigh + FiretotalHigh + FitOuttotalHigh
 
                 }
-            return render(request, "alpha/services/service_1.html", context)
+            return render(request, "alpha/services/service_1.html",context)
 
 
 
@@ -116,7 +116,7 @@ def services(request : HttpRequest):
                 "totalMax" : buildingShelltotalHigh + electricalSystemtotalHigh + HVACtotalHigh + FiretotalHigh + FitOuttotalHigh
 
                 }
-            return render(request, "alpha/services/service_2.html", context)
+            return render(request, "alpha/services/service_2.html",context)
 
 
 ############# MATH OPREATION FOR THE ( THIRD CHOICE  )  ################

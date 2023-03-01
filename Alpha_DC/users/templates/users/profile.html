@@ -5,22 +5,28 @@
 
 {% block content %}
 
-<div class="container">
-    <h1> Welcome {{ request.user.first_name  }} {{ request.user.last_name }}</h1>
-    <h2>User Info</h2>
-    <h5>User Name: {{ request.user.username }}</h5>
-    <h5>Email: {{ request.user.email }}</h5>
-    <h5>Birth date:{{ request.user.profile.birth_date }}</h5>
+
+<section style="background-color:dimgray;">
+<div class="container" style="background-color:dimgray; color: aliceblue; font-family:'Times New Roman '">
+    <h1 style=" color: rgb(230, 184, 236); font-family:'Times New Roman '"> Welcome {{ request.user.first_name  }} {{ request.user.last_name }}</h1>
+    <h2 style=" color: rgb(230, 184, 236); font-family:'Times New Roman '">User Info</h2>
+    <h5 >User Name: {{ request.user.username }}</h5>
+    <h5 >Email: {{ request.user.email }}</h5>
+    <h5 >Birth date:{{ request.user.profile.birth_date }}</h5>
     <h5>Gender: {{ request.user.profile.gender }}</h5>
     <h5>Company:{{ request.user.profile.company }}</h5>
     <h5>Job Title : {{ request.user.profile.job }}</h5>
     <h5>Creation Date : {{ request.user.profile.creation_date }}</h5>
 
-
-
-    
+    <style>
+        h5 {color: aliceblue; 
+        font-family:'Times New Roman';
+    }
+    </style>
 
 </div>
+
+</section>
 
 
 {% endblock %}
